@@ -1,0 +1,15 @@
+version: "Apple Swift version 5.1.3 (swiftlang-1100.0.282.1 clang-1100.0.33.15)"
+options: "abeefdaf64d5914f9937f609cb7fdd24"
+build_time: [1581027459, 275615000]
+inputs:
+  "/Users/taco/Library/Developer/Xcode/DerivedData/pillz-bzarpryepuhnyiagawxbpzbmwwkv/SourcePackages/checkouts/Rainbow/Sources/BackgroundColor.swift": [9223372036, 854775807]
+  "/Users/taco/Library/Developer/Xcode/DerivedData/pillz-bzarpryepuhnyiagawxbpzbmwwkv/SourcePackages/checkouts/Rainbow/Sources/CodesParser.swift": [9223372036, 854775807]
+  "/Users/taco/Library/Developer/Xcode/DerivedData/pillz-bzarpryepuhnyiagawxbpzbmwwkv/SourcePackages/checkouts/Rainbow/Sources/Color.swift": [9223372036, 854775807]
+  "/Users/taco/Library/Developer/Xcode/DerivedData/pillz-bzarpryepuhnyiagawxbpzbmwwkv/SourcePackages/checkouts/Rainbow/Sources/ControlCode.swift": [9223372036, 854775807]
+  "/Users/taco/Library/Developer/Xcode/DerivedData/pillz-bzarpryepuhnyiagawxbpzbmwwkv/SourcePackages/checkouts/Rainbow/Sources/ModesExtractor.swift": [9223372036, 854775807]
+  "/Users/taco/Library/Developer/Xcode/DerivedData/pillz-bzarpryepuhnyiagawxbpzbmwwkv/SourcePackages/checkouts/Rainbow/Sources/OutputTarget.swift": [9223372036, 854775807]
+  "/Users/taco/Library/Developer/Xcode/DerivedData/pillz-bzarpryepuhnyiagawxbpzbmwwkv/SourcePackages/checkouts/Rainbow/Sources/Rainbow.swift": [9223372036, 854775807]
+  "/Users/taco/Library/Developer/Xcode/DerivedData/pillz-bzarpryepuhnyiagawxbpzbmwwkv/SourcePackages/checkouts/Rainbow/Sources/String+Rainbow.swift": [9223372036, 854775807]
+  "/Users/taco/Library/Developer/Xcode/DerivedData/pillz-bzarpryepuhnyiagawxbpzbmwwkv/SourcePackages/checkouts/Rainbow/Sources/StringGenerator.swift": [9223372036, 854775807]
+  "/Users/taco/Library/Developer/Xcode/DerivedData/pillz-bzarpryepuhnyiagawxbpzbmwwkv/SourcePackages/checkouts/Rainbow/Sources/Style.swift": [9223372036, 854775807]
+  "/Users/taco/Library/Developer/Xcode/DerivedData/pillz-bzarpryepuhnyiagawxbpzbmwwkv/SourcePackages/checkouts/Rainbow/Sources/XcodeColorsSupport.swift": [9223372036, 854775807]

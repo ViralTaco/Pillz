@@ -1,0 +1,158 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "ParseResult"
+- "CodesParser"
+- "ConsoleCodesParser"
+- "XcodeColorsCodesParser"
+provides-nominal:
+- "7Rainbow11CodesParserP"
+- "7Rainbow18ConsoleCodesParserV"
+- "7Rainbow22XcodeColorsCodesParserV"
+provides-member:
+- ["7Rainbow11CodesParserP", ""]
+- ["7Rainbow18ConsoleCodesParserV", ""]
+- ["7Rainbow22XcodeColorsCodesParserV", ""]
+provides-dynamic-lookup:
+depends-top-level:
+- !private "=="
+- "AssignmentPrecedence"
+- "BackgroundColor"
+- "CodesParser"
+- "Color"
+- "ConsoleCodesParser"
+- "ParseResult"
+- "String"
+- "Style"
+- "UInt8"
+- "XcodeColorsCodesParser"
+depends-member:
+- !private ["Sa", "append"]
+- !private ["7Rainbow15BackgroundColorO", "deinit"]
+- !private ["7Rainbow15BackgroundColorO", "init"]
+- !private ["SK", "append"]
+- !private ["s7CVarArgP", "append"]
+- !private ["7Rainbow11CodesParserP", "BackgroundColor"]
+- !private ["7Rainbow11CodesParserP", "Color"]
+- ["7Rainbow11CodesParserP", "ParseResult"]
+- ["7Rainbow11CodesParserP", "SourceType"]
+- !private ["7Rainbow11CodesParserP", "Style"]
+- ["7Rainbow11CodesParserP", ""]
+- ["7Rainbow11CodesParserP", "_Default_SourceType"]
+- ["7Rainbow11CodesParserP", "parse"]
+- !private ["Sl", "append"]
+- !private ["7Rainbow5ColorO", "deinit"]
+- !private ["7Rainbow5ColorO", "init"]
+- !private ["7Rainbow18ConsoleCodesParserV", "BackgroundColor"]
+- !private ["7Rainbow18ConsoleCodesParserV", "Color"]
+- ["7Rainbow18ConsoleCodesParserV", "ParseResult"]
+- ["7Rainbow18ConsoleCodesParserV", "SourceType"]
+- !private ["7Rainbow18ConsoleCodesParserV", "Style"]
+- ["7Rainbow18ConsoleCodesParserV", "UInt8"]
+- ["7Rainbow18ConsoleCodesParserV", "_Default_SourceType"]
+- ["7Rainbow18ConsoleCodesParserV", "deinit"]
+- ["7Rainbow18ConsoleCodesParserV", "init"]
+- ["7Rainbow18ConsoleCodesParserV", "parse"]
+- !private ["10Foundation15ContiguousBytesP", "append"]
+- !private ["s28CustomDebugStringConvertibleP", "append"]
+- !private ["s17CustomReflectableP", "append"]
+- !private ["s23CustomStringConvertibleP", "append"]
+- !private ["10Foundation12DataProtocolP", "append"]
+- !private ["Se", "append"]
+- !private ["SE", "append"]
+- !private ["SQ", "append"]
+- !private ["SQ", "init"]
+- !private ["s25ExpressibleByArrayLiteralP", "append"]
+- !private ["SH", "append"]
+- !private ["SH", "init"]
+- !private ["7Rainbow8ModeCodeP", "init"]
+- !private ["SM", "append"]
+- !private ["10Foundation19MutableDataProtocolP", "append"]
+- !private ["Sk", "append"]
+- !private ["Sm", "append"]
+- !private ["SY", "init"]
+- !private ["ST", "append"]
+- !private ["7Rainbow5StyleO", "deinit"]
+- !private ["7Rainbow5StyleO", "init"]
+- !private ["7Rainbow22XcodeColorsCodesParserV", "BackgroundColor"]
+- !private ["7Rainbow22XcodeColorsCodesParserV", "Color"]
+- ["7Rainbow22XcodeColorsCodesParserV", "ParseResult"]
+- ["7Rainbow22XcodeColorsCodesParserV", "SourceType"]
+- ["7Rainbow22XcodeColorsCodesParserV", "String"]
+- ["7Rainbow22XcodeColorsCodesParserV", "_Default_SourceType"]
+- ["7Rainbow22XcodeColorsCodesParserV", "deinit"]
+- ["7Rainbow22XcodeColorsCodesParserV", "init"]
+- ["7Rainbow22XcodeColorsCodesParserV", "parse"]
+- !private ["7Rainbow22XcodeColorsConvertibleP", "init"]
+- !private ["s14_ArrayProtocolP", "append"]
+- !private ["s24_DestructorSafeContainerP", "append"]
+- !private ["s19_HasContiguousBytesP", "append"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "append"]
+- !private ["s21_ObjectiveCBridgeableP", "append"]
+depends-nominal:
+- !private "Sa"
+- !private "7Rainbow15BackgroundColorO"
+- !private "SK"
+- !private "s7CVarArgP"
+- "7Rainbow11CodesParserP"
+- !private "Sl"
+- !private "7Rainbow5ColorO"
+- "7Rainbow18ConsoleCodesParserV"
+- !private "10Foundation15ContiguousBytesP"
+- !private "s28CustomDebugStringConvertibleP"
+- !private "s17CustomReflectableP"
+- !private "s23CustomStringConvertibleP"
+- !private "10Foundation12DataProtocolP"
+- !private "Se"
+- !private "SE"
+- !private "SQ"
+- !private "s25ExpressibleByArrayLiteralP"
+- !private "SH"
+- !private "7Rainbow8ModeCodeP"
+- !private "SM"
+- !private "10Foundation19MutableDataProtocolP"
+- !private "Sk"
+- !private "Sm"
+- !private "SY"
+- !private "ST"
+- !private "7Rainbow5StyleO"
+- "7Rainbow22XcodeColorsCodesParserV"
+- !private "7Rainbow22XcodeColorsConvertibleP"
+- !private "s14_ArrayProtocolP"
+- !private "s24_DestructorSafeContainerP"
+- !private "s19_HasContiguousBytesP"
+- !private "s35_HasCustomAnyHashableRepresentationP"
+- !private "s21_ObjectiveCBridgeableP"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/swift/XPC.swiftmodule/x86_64.swiftinterface"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/swift/ObjectiveC.swiftmodule/x86_64.swiftinterface"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/swift/Dispatch.swiftmodule/x86_64.swiftinterface"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/swift/Darwin.swiftmodule/x86_64.swiftinterface"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/swift/Foundation.swiftmodule/x86_64.swiftinterface"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/swift/CoreFoundation.swiftmodule/x86_64.swiftinterface"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/swift/CoreGraphics.swiftmodule/x86_64.swiftinterface"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/swift/Swift.swiftmodule/x86_64.swiftinterface"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/swift/IOKit.swiftmodule/x86_64.swiftinterface"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/swift/SwiftOnoneSupport.swiftmodule/x86_64.swiftinterface"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/Combine.framework/Modules/Combine.swiftmodule/x86_64-apple-macos.swiftinterface"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/XPC.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/ObjectiveC.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/Combine.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/Dispatch.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/Darwin.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/Foundation.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/CoreFoundation.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/CoreGraphics.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/Swift.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/IOKit.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/SwiftOnoneSupport.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/include/xpc/XPC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/apinotes/Dispatch.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/ApplicationServices.framework/Headers/ApplicationServices.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
+interface-hash: "c50003de16bedfd0c62d1bf9ccdf3af0"

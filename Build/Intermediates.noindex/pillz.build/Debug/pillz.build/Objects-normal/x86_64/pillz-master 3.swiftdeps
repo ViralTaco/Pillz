@@ -1,0 +1,22 @@
+version: "Apple Swift version 5.1.3 (swiftlang-1100.0.282.1 clang-1100.0.33.15)"
+options: "d4dc8454f7bb6d4116be384bbaf48531"
+build_time: [1580994798, 825592000]
+inputs:
+  "/Users/taco/Desktop/projects/code/Swift/pilllog/pillz/Model/Extensions.swift": [1580993205, 744589822]
+  "/Users/taco/Desktop/projects/code/Swift/pilllog/pillz/Controller/Reader.swift": [1580993191, 95075538]
+  "/Users/taco/Desktop/projects/code/Swift/pilllog/pillz/View/CustomView.swift": [1580993207, 23738859]
+  "/Users/taco/Desktop/projects/code/Swift/pilllog/pillz/Model/Drug/DrugList.swift": [1580993202, 938212325]
+  "/Users/taco/Desktop/projects/code/Swift/pilllog/pillz/Model/Log/LogList.swift": [1580994612, 211952793]
+  "/Users/taco/Desktop/projects/code/Swift/pilllog/pillz/Controller/Writer.swift": [1580993195, 397875631]
+  "/Users/taco/Desktop/projects/code/Swift/pilllog/pillz/Controller/Command.swift": [1580993197, 625167849]
+  "/Users/taco/Desktop/projects/code/Swift/pilllog/pillz/Model/Log/Log.swift": [1580994612, 53941902]
+  "/Users/taco/Desktop/projects/code/Swift/pilllog/pillz/Controller/App.swift": [1580993198, 629667666]
+  "/Users/taco/Desktop/projects/code/Swift/pilllog/pillz/Controller/Defaults.swift": [1580993199, 448633456]
+  "/Users/taco/Desktop/projects/code/Swift/pilllog/pillz/View/CurrentView.swift": [1580993208, 208808772]
+  "/Users/taco/Desktop/projects/code/Swift/pilllog/pillz/View/DrugView.swift": [1580993210, 233756674]
+  "/Users/taco/Desktop/projects/code/Swift/pilllog/pillz/Model/ViewConstants.swift": [1580993200, 581645519]
+  "/Users/taco/Desktop/projects/code/Swift/pilllog/main.swift": [1580994354, 4039803]
+  "/Users/taco/Desktop/projects/code/Swift/pilllog/pillz/Controller/Action.swift": [1580993196, 532919353]
+  "/Users/taco/Desktop/projects/code/Swift/pilllog/pillz/Model/Drug/Drug.swift": [1580993201, 960816671]
+  "/Users/taco/Desktop/projects/code/Swift/pilllog/pillz/Model/CustomIndex.swift": [1580993204, 530738532]
+  "/Users/taco/Desktop/projects/code/Swift/pilllog/pillz/View/LogView.swift": [1580993209, 185203914]

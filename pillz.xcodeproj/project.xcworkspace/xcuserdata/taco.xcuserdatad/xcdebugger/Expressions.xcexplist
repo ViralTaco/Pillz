@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "View.init():View.swift">
+      </ContextState>
+      <ContextState
+         contextName = "GLOBAL">
+         <PersistentStrings>
+            <PersistentString
+               value = "(pilllog.Action)action">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "View.run():View.swift">
+      </ContextState>
+      <ContextState
+         contextName = "App.command(_:):Command.swift">
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>

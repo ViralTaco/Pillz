@@ -1,0 +1,262 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "CustomView"
+provides-nominal:
+- "5pillz10CustomViewC"
+provides-member:
+- ["5pillz10CustomViewC", ""]
+provides-dynamic-lookup:
+depends-top-level:
+- !private "!="
+- !private "+"
+- !private "=="
+- "Action"
+- "App"
+- "AssignmentPrecedence"
+- "Bool"
+- !private "BooleanLiteralType"
+- "CurrentView"
+- "CustomView"
+- "Drug"
+- !private "DrugView"
+- !private "EXIT_SUCCESS"
+- !private "FloatLiteralType"
+- "ID"
+- "Int"
+- !private "IntegerLiteralType"
+- !private "LogView"
+- "Never"
+- "String"
+- !private "StringLiteralType"
+- !private "UnicodeScalarType"
+- !private "ViewConstants"
+- "Void"
+- !private "exit"
+- !private "print"
+- !private "readLine"
+depends-member:
+- ["5pillz6ActionO", "back"]
+- ["5pillz6ActionO", "clear"]
+- ["5pillz6ActionO", "error"]
+- ["5pillz6ActionO", "exit"]
+- ["5pillz6ActionO", "help"]
+- ["5pillz6ActionO", "last"]
+- ["5pillz6ActionO", "logs"]
+- ["5pillz6ActionO", "rm"]
+- ["5pillz6ActionO", "select"]
+- !private ["s18AdditiveArithmeticP", "init"]
+- !private ["5pillz3AppC", "addLog"]
+- !private ["5pillz3AppC", "command"]
+- !private ["5pillz3AppC", "drugList"]
+- !private ["5pillz3AppC", "drugs"]
+- !private ["5pillz3AppC", "init"]
+- !private ["5pillz3AppC", "logs"]
+- !private ["5pillz3AppC", "save"]
+- !private ["5pillz3AppC", "stop"]
+- !private ["Sa", "subscript"]
+- !private ["SK", "subscript"]
+- !private ["Sz", "init"]
+- !private ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "subscript"]
+- !private ["Sl", "subscript"]
+- !private ["5pillz12CommandErrorO", "deinit"]
+- !private ["5pillz12CommandErrorO", "localizedDescription"]
+- !private ["SL", "init"]
+- !private ["10Foundation15ContiguousBytesP", "subscript"]
+- !private ["5pillz11CurrentViewO", "clear"]
+- !private ["5pillz11CurrentViewO", "deinit"]
+- !private ["5pillz11CurrentViewO", "draw"]
+- !private ["5pillz11CurrentViewO", "drug"]
+- !private ["5pillz11CurrentViewO", "error"]
+- !private ["5pillz11CurrentViewO", "help"]
+- !private ["5pillz11CurrentViewO", "logs"]
+- ["5pillz11CurrentViewO", "main"]
+- !private ["5pillz11CurrentViewO", "orange"]
+- !private ["s28CustomDebugStringConvertibleP", "subscript"]
+- !private ["5pillz11CustomIndexC", "init"]
+- !private ["s17CustomReflectableP", "init"]
+- !private ["s17CustomReflectableP", "subscript"]
+- !private ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "pop"]
+- !private ["s23CustomStringConvertibleP", "subscript"]
+- ["5pillz10CustomViewC", "Action"]
+- ["5pillz10CustomViewC", "App"]
+- ["5pillz10CustomViewC", "Bool"]
+- ["5pillz10CustomViewC", "CurrentView"]
+- !private ["5pillz10CustomViewC", "CustomView"]
+- ["5pillz10CustomViewC", "Drug"]
+- !private ["5pillz10CustomViewC", "DrugView"]
+- !private ["5pillz10CustomViewC", "EXIT_SUCCESS"]
+- ["5pillz10CustomViewC", "ID"]
+- ["5pillz10CustomViewC", "Int"]
+- !private ["5pillz10CustomViewC", "LogView"]
+- ["5pillz10CustomViewC", "Never"]
+- ["5pillz10CustomViewC", "String"]
+- !private ["5pillz10CustomViewC", "ViewConstants"]
+- ["5pillz10CustomViewC", "Void"]
+- ["5pillz10CustomViewC", "app"]
+- ["5pillz10CustomViewC", "confirm"]
+- ["5pillz10CustomViewC", "current"]
+- ["5pillz10CustomViewC", "doAction"]
+- !private ["5pillz10CustomViewC", "drawMain"]
+- ["5pillz10CustomViewC", "drug"]
+- !private ["5pillz10CustomViewC", "exit"]
+- ["5pillz10CustomViewC", "init"]
+- !private ["5pillz10CustomViewC", "last"]
+- !private ["5pillz10CustomViewC", "print"]
+- !private ["5pillz10CustomViewC", "prompt"]
+- !private ["5pillz10CustomViewC", "readLine"]
+- !private ["5pillz10CustomViewC", "remove"]
+- !private ["5pillz10CustomViewC", "run"]
+- !private ["5pillz10CustomViewC", "save"]
+- !private ["5pillz10CustomViewC", "select"]
+- !private ["5pillz10CustomViewC", "setCurrent"]
+- !private ["10Foundation12DataProtocolP", "subscript"]
+- !private ["Se", "init"]
+- !private ["Se", "last"]
+- !private ["Se", "pop"]
+- !private ["Se", "subscript"]
+- !private ["5pillz4DrugC", "deinit"]
+- !private ["5pillz4DrugC", "pop"]
+- !private ["5pillz8DrugListV", "pop"]
+- !private ["5pillz8DrugViewV", "list"]
+- !private ["5pillz8DrugViewV", "print"]
+- !private ["SE", "init"]
+- !private ["SE", "last"]
+- !private ["SE", "pop"]
+- !private ["SE", "subscript"]
+- !private ["SQ", "clear"]
+- !private ["SQ", "draw"]
+- !private ["SQ", "drug"]
+- !private ["SQ", "error"]
+- !private ["SQ", "help"]
+- !private ["SQ", "init"]
+- !private ["SQ", "logs"]
+- ["SQ", "main"]
+- !private ["SQ", "orange"]
+- !private ["SQ", "pop"]
+- !private ["SQ", "subscript"]
+- !private ["s5ErrorP", "localizedDescription"]
+- !private ["s25ExpressibleByArrayLiteralP", "subscript"]
+- !private ["s27ExpressibleByIntegerLiteralP", "init"]
+- !private ["s17FixedWidthIntegerP", "init"]
+- !private ["SH", "init"]
+- !private ["SH", "pop"]
+- !private ["SH", "subscript"]
+- !private ["Si", "init"]
+- !private ["5pillz7LogListV", "last"]
+- !private ["5pillz7LogViewV", "print"]
+- !private ["s25LosslessStringConvertibleP", "init"]
+- !private ["s10MirrorPathP", "init"]
+- !private ["SM", "subscript"]
+- !private ["10Foundation19MutableDataProtocolP", "subscript"]
+- !private ["Sj", "init"]
+- !private ["Sk", "subscript"]
+- !private ["Sm", "subscript"]
+- !private ["s10SIMDScalarP", "init"]
+- !private ["ST", "subscript"]
+- !private ["SZ", "init"]
+- !private ["s13SignedNumericP", "init"]
+- !private ["Sx", "init"]
+- !private ["5pillz13ViewConstantsV", "confirm"]
+- !private ["5pillz8WritableP", "last"]
+- !private ["5pillz8WritableP", "pop"]
+- !private ["s14_ArrayProtocolP", "subscript"]
+- !private ["s30_CustomPlaygroundQuickLookableP", "init"]
+- !private ["s24_DestructorSafeContainerP", "subscript"]
+- !private ["s35_ExpressibleByBuiltinIntegerLiteralP", "init"]
+- !private ["s19_HasContiguousBytesP", "subscript"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "init"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "subscript"]
+- !private ["s21_ObjectiveCBridgeableP", "init"]
+- !private ["s21_ObjectiveCBridgeableP", "subscript"]
+depends-nominal:
+- "5pillz6ActionO"
+- !private "s18AdditiveArithmeticP"
+- !private "5pillz3AppC"
+- !private "Sa"
+- !private "SK"
+- !private "Sz"
+- !private "s7CVarArgP"
+- !private "Sl"
+- !private "5pillz12CommandErrorO"
+- !private "SL"
+- !private "10Foundation15ContiguousBytesP"
+- "5pillz11CurrentViewO"
+- !private "s28CustomDebugStringConvertibleP"
+- !private "5pillz11CustomIndexC"
+- !private "s17CustomReflectableP"
+- !private "s23CustomStringConvertibleP"
+- "5pillz10CustomViewC"
+- !private "10Foundation12DataProtocolP"
+- !private "Se"
+- !private "5pillz4DrugC"
+- !private "5pillz8DrugListV"
+- !private "5pillz8DrugViewV"
+- !private "SE"
+- "SQ"
+- !private "s5ErrorP"
+- !private "s25ExpressibleByArrayLiteralP"
+- !private "s27ExpressibleByIntegerLiteralP"
+- !private "s17FixedWidthIntegerP"
+- !private "SH"
+- !private "Si"
+- !private "5pillz7LogListV"
+- !private "5pillz7LogViewV"
+- !private "s25LosslessStringConvertibleP"
+- !private "s10MirrorPathP"
+- !private "SM"
+- !private "10Foundation19MutableDataProtocolP"
+- !private "Sj"
+- !private "Sk"
+- !private "Sm"
+- !private "s10SIMDScalarP"
+- !private "ST"
+- !private "SZ"
+- !private "s13SignedNumericP"
+- !private "Sx"
+- !private "5pillz13ViewConstantsV"
+- !private "5pillz8WritableP"
+- !private "s14_ArrayProtocolP"
+- !private "s30_CustomPlaygroundQuickLookableP"
+- !private "s24_DestructorSafeContainerP"
+- !private "s35_ExpressibleByBuiltinIntegerLiteralP"
+- !private "s19_HasContiguousBytesP"
+- !private "s35_HasCustomAnyHashableRepresentationP"
+- !private "s21_ObjectiveCBridgeableP"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/swift/XPC.swiftmodule/x86_64.swiftinterface"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/swift/ObjectiveC.swiftmodule/x86_64.swiftinterface"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/swift/CoreData.swiftmodule/x86_64.swiftinterface"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/swift/Dispatch.swiftmodule/x86_64.swiftinterface"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/swift/Darwin.swiftmodule/x86_64.swiftinterface"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/swift/Foundation.swiftmodule/x86_64.swiftinterface"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/swift/CoreFoundation.swiftmodule/x86_64.swiftinterface"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/swift/CoreGraphics.swiftmodule/x86_64.swiftinterface"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/swift/Swift.swiftmodule/x86_64.swiftinterface"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/swift/IOKit.swiftmodule/x86_64.swiftinterface"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/Combine.framework/Modules/Combine.swiftmodule/x86_64-apple-macos.swiftinterface"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/XPC.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/ObjectiveC.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/CoreData.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/Combine.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/Dispatch.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/Darwin.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/Foundation.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/CoreFoundation.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/CoreGraphics.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/Swift.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/IOKit.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Users/taco/Desktop/projects/swift/pillz/Build/Products/Release/Rainbow.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/include/xpc/XPC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/CoreData.framework/Headers/CoreData.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/apinotes/Dispatch.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/ApplicationServices.framework/Headers/ApplicationServices.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
+interface-hash: "1e8eb2d28f053319d07b7ae6e07d2422"
