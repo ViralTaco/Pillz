@@ -10,6 +10,7 @@ struct ViewConstants {
   static let clear = "\u{001B}[2J"
   static let orange = "\u{001B}[1;38;5;208m"
   static let reset = "\u{001B}[0m"
+  
 // MARK: Menu text:
   static let help = """
     Help menu:
