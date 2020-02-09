@@ -22,7 +22,6 @@ enum Command: String {
   case rmdrug = "rmdrug" // remove a drug
   case rmdose = "rmdose" // remove a dose
   
-  
   case exit = "exit"
   case quit = "quit"
 }
