@@ -6,4 +6,11 @@
 //  Copyright © 2020 viraltaco_. All rights reserved.
 //
 
-_ = CustomView()
+let view = CustomView()
+
+if CommandLine.arguments.last == "last" {
+  view.last(5) // show the last 5
+} else {
+  view.run()
+}
+

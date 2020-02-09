@@ -20,17 +20,35 @@
 import Foundation
 
 class CustomView {
-  let app: App
-  var current: CurrentView = .main
-  var drug: Drug? = nil
+  private let app: App
+  private var current: CurrentView = .main
+  private var drug: Drug? = nil
   
 // MARK: init
   required init() {
     self.app = try! App()
-    _ = doAction(Action.back) // MARK:  show main at start
-    self.run()
   }
 
+// MARK: public methods
+  public func run() -> Never {
+    _ = doAction(Action.back) // show main at start
+    while let line = CustomView.prompt() {
+      if let action = try? app.command(line) {
+        if doAction(action) == App.stop { break }
+        save() // MARK:  before running another action, just save.
+      }
+    }
+    return exit(EXIT_SUCCESS)
+  }
+  
+  public func last(_ max: Int) -> Void {
+    if self.drug != nil {
+      LogView.print(self.app.logs.last(for: self.drug, max))
+    } else {
+      LogView.print(self.app.logs.last(max))
+    }
+  }
+  
 // MARK: public static methods
   public static func confirm() -> Bool {
     print(ViewConstants.confirm)
@@ -41,22 +59,13 @@ class CustomView {
   }
   
 // MARK: private methods
-  private func run() -> Never {
-    while let line = CustomView.prompt() {
-      if let action = try? app.command(line) {
-        if doAction(action) == App.stop { break }
-        save() // MARK:  before running another action, just save.
-      }
-    }
-    return exit(EXIT_SUCCESS)
-  }
-  
-  func doAction(_ action: Action) -> Bool {
+  private func doAction(_ action: Action) -> Bool {
     switch action {
     case .clear, .back:
       drawMain()
     case .last(let selection):
       self.last(selection)
+      drawMain()
     case .logs(let logs):
       self.current = .logs
       LogView.print(logs)
@@ -87,15 +96,6 @@ class CustomView {
   
   private func save() -> Void {
     try? self.app.save()
-  }
-  
-  private func last(_ max: Int) -> Void {
-    if self.drug != nil {
-      LogView.print(self.app.logs.last(for: self.drug, max))
-    } else {
-      LogView.print(self.app.logs.last(max))
-    }
-    drawMain()
   }
   
   private func setCurrent(_ new: CurrentView = .main) -> Void {
