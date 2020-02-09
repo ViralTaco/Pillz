@@ -18,6 +18,7 @@
  */
 
 import Foundation
+import Rainbow
 
 class CustomView {
   private let app: App
@@ -126,7 +127,7 @@ class CustomView {
   }
   
   private static func prompt() -> String? {
-    print("\n" + CurrentView.orange(">"), terminator: " ")
+    print("\n" + ">".yellow, terminator: " ")
     return readLine()
   }
 }
