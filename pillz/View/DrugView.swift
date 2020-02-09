@@ -25,7 +25,7 @@ struct DrugView {
     CurrentView.separator()
     var index = ID()
     for dose in drug.doseList {
-      Swift.print("  [\("\(index)".bold)] \(dose)\("mg".lightWhite)")
+      Swift.print("  [\("\(index)".bold)] \(dose)\(ViewConstants.mg)")
       index += 1
     }
     Swift.print()

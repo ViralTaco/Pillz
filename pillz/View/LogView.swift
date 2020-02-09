@@ -25,7 +25,7 @@ struct LogView {
   static func print(_ log: Log?) -> Void {
     guard log != nil else { return }
     let (date, name, dose) = (dateToString(log!.date!), log!.name!, log!.dose!)
-    Swift.print("  \(date)\t\(name)\t\(dose)\(Self.mg)")
+    Swift.print("  \(date)\t\(name)\t\(dose)\(ViewConstants.mg)")
   }
   
   static func print(_ logs: [Log]) -> Void {
