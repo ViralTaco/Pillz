@@ -16,6 +16,8 @@ struct LogView {
     return df
   }
   
+  private static let mg = "mg".lightWhite
+  
   static func dateToString(_ date: Date = Date()) -> String {
     return dateFormatter.string(from: date)
   }
@@ -23,8 +25,7 @@ struct LogView {
   static func print(_ log: Log?) -> Void {
     guard log != nil else { return }
     let (date, name, dose) = (dateToString(log!.date!), log!.name!, log!.dose!)
-    let mg = "mg".lightWhite
-    Swift.print("  \(date)\t\(name)\t\(dose)\(mg)")
+    Swift.print("  \(date)\t\(name)\t\(dose)\(Self.mg)")
   }
   
   static func print(_ logs: [Log]) -> Void {
