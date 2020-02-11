@@ -8,9 +8,10 @@
 
 import CoreData
 
-struct DrugList: Equatable & Codable & Writable {
+class DrugList: Equatable & Codable & Writable {
   static let defaultPath = Defaults.drugsFile
   var drugs = Set<Drug>()
+  lazy var count: Int = self.drugs.count
 
 // MARK: coding keys
   enum CodingKeys: String, CodingKey {
@@ -26,38 +27,38 @@ struct DrugList: Equatable & Codable & Writable {
     self.drugs.insert(drug)
   }
 
-  init(from decoder: Decoder) throws {
+  required init(from decoder: Decoder) throws {
     let values = try decoder.container(keyedBy: CodingKeys.self)
     self.drugs = try values.decode(Set<Drug>.self, forKey: .drugs)
   }
   
-  init() {}
+  required init() {}
   
 // MARK: methods
-  mutating func add(drugs: [Drug]) {
+  func add(drugs: [Drug]) {
     self.drugs = self.drugs.union(drugs)
   }
   
-  mutating func add(drug: Drug) {
+  func add(drug: Drug) {
     self.drugs.insert(drug)
   }
   
-  mutating func add(doses: [Double], to name: String) throws {
+  func add(doses: [Double], to name: String) throws {
     guard let id = self.drugs.firstIndex(where: { $0.isNamed(name) }) else {
       throw DrugError.noSuchDrug("\("Error".red): no drug named \(name)")
     }
     self.drugs[id].add(doses: doses)
   }
   
-  mutating func add(dose: Double, to name: String) throws {
+  func add(dose: Double, to name: String) throws {
     try self.add(doses: [dose], to: name)
   }
   
-  mutating func pop(at index: Int) -> Drug? {
+  func pop(at index: Int) -> Drug? {
     return self.drugs.pop(at: index)
   }
   
-  @discardableResult mutating func drop(key: String) -> Self {
+  @discardableResult func drop(key: String) -> Self {
     self.drugs = self.drugs.filter { $0.name == key }
     return self
   }
@@ -69,11 +70,11 @@ struct DrugList: Equatable & Codable & Writable {
   }
   
 // MARK: operator overloads
-  static func += (_ lhs: inout Self, _ rhs: Drug) {
+  static func += (_ lhs: inout DrugList, _ rhs: Drug) {
     lhs.add(drug: rhs)
   }
   
-  static func += (_ lhs: inout Self, _ rhs: [Drug]) {
+  static func += (_ lhs: inout DrugList, _ rhs: [Drug]) {
     lhs.add(drugs: rhs)
   }
   
@@ -82,10 +83,11 @@ struct DrugList: Equatable & Codable & Writable {
   }
   
   subscript(_ index: Int) -> Drug? {
+    guard index < self.count else { return nil }
     return self.drugs[index]
   }
   
-  static func == (lhs: Self, rhs: Self) -> Bool {
+  static func == (lhs: DrugList, rhs: DrugList) -> Bool {
     return lhs.drugs == rhs.drugs
   }
 }
