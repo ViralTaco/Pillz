@@ -50,6 +50,12 @@ class CustomView {
     }
   }
   
+  public func version() -> Void {
+    if let version = Bundle.main.infoDictionary?["CFBundleVersion"] as? String {
+      print("pillz \(version)\nLicense:\n\(ViewConstants.license)")
+    }
+  }
+  
 // MARK: public static methods
   public static func confirm() -> Bool {
     print(ViewConstants.confirm)
