@@ -54,10 +54,6 @@ enum CurrentView: Equatable {
   static func separator() {
     print(ViewConstants.line)
   }
-  
-  static func orange(_ str: String) -> String {
-    return ViewConstants.orange + str + ViewConstants.reset
-  }
 
   static func boxed(_ str: String) -> String {
     return """
