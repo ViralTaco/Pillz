@@ -46,6 +46,7 @@ enum CommandError: Error {
   }
 }
 
+// MARK: App().command(String) throws -> Action?
 extension App {
   public func command(_ command: String) throws -> Action? {
     // if string empty it's just enter key
