@@ -7,17 +7,43 @@
 //
 
 struct ViewConstants {
+  static let columns = 60 // number of chars in the view
   static let clear = "\u{001B}[2J"
-  static let orange = "\u{001B}[1;38;5;208m"
-  static let reset = "\u{001B}[0m"
 
-// MARK: --help
-  static let usage = """
-    pillz [last, --help, --version]
-      last:\("\t")Show last 5 logs
-      --help:\("\t")Show this screen
-      --version:\("\t")Show pillz version and license
+// MARK: license
+  static let license = """
+    pillz Copyright © 2019-\(DateView().year) Anthony Capobianco
+    
+      Permission is hereby granted, free of charge, to any person obtaining a copy of
+      this software and associated documentation files (the "Software"), to deal in the
+      Software without restriction, including without limitation the rights to use, copy,
+      modify, merge, publish, distribute, sublicense, and/or sell copies of the Software,
+      and to permit persons to whom the Software is furnished to do so,
+      subject to the following conditions:
+      
+      The above copyright notice and this permission notice (including the next paragraph)
+      shall be included in all copies or substantial portions of the Software.
+      
+      THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED,
+      INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A
+      PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT
+      HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION
+      OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
+      SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+    
     """
+  
+// MARK: usage
+  static let usage = """
+      Usage:
+        pillz [option]
+      
+      options:
+        last                  Print last 5 logs
+        logs                  Print all the logs
+        help, --help          Print this help screen
+        version, --version    Print pillz version and license
+      """
   
   
 // MARK: Menu text:
@@ -48,10 +74,13 @@ struct ViewConstants {
 
   static let drug = "drug"
   static let dose = "dose"
+  
   static let mg = "mg".lightWhite
+  static let gram = "g".lightWhite
   
 // MARK: Decoration:
-  static let line = String(Array(repeating: "═", count: 60)).lightBlack
+  static let line = String(Array(repeating: "═",
+                                 count: Self.columns)).lightBlack
   
 // MARK: Functions:
   static func banner(_ context: String = "drug") -> String {
