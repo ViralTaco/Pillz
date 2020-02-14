@@ -50,8 +50,12 @@ class CustomView {
     }
   }
   
+  public func printLogs() -> Void {
+    LogView.print(self.app.logs.list)
+  }
+  
   public func printVersion() -> Void {
-    if let version = Bundle.main.infoDictionary?["CFBundleVersion"] as? String {
+    if let version = Bundle.main.infoDictionary?["CFBundleShortVersionString"] as? String {
       print("pillz \(version)\nLicense:\n\(ViewConstants.license)")
     }
   }
