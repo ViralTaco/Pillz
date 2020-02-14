@@ -14,6 +14,7 @@
 		1C8E38C323EA38BC0079F4D8 /* CustomIndex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C8E38C223EA38BC0079F4D8 /* CustomIndex.swift */; };
 		1C9250FB23EC2AE700A149F3 /* Rainbow in Frameworks */ = {isa = PBXBuildFile; productRef = 1C9250FA23EC2AE700A149F3 /* Rainbow */; settings = {ATTRIBUTES = (Required, ); }; };
 		1C9250FD23EC2BF800A149F3 /* Defaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C9250FC23EC2BF800A149F3 /* Defaults.swift */; };
+		1C996E7123F6063900C33991 /* DateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C996E7023F6063900C33991 /* DateView.swift */; };
 		1C9C22E823EB90F500D6990C /* ViewConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C9C22E723EB90F500D6990C /* ViewConstants.swift */; };
 		1C9C22EA23EB980300D6990C /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C9C22E923EB980300D6990C /* Extensions.swift */; };
 		1C9EEE6023E86CEB00814D5C /* LogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C9EEE5F23E86CEB00814D5C /* LogView.swift */; };
@@ -45,8 +46,10 @@
 		1C3A566E23BFD9BB0075D6B8 /* LogList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogList.swift; sourceTree = "<group>"; };
 		1C66A79623E4C92600C3AB14 /* Writer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Writer.swift; sourceTree = "<group>"; };
 		1C66A79823E4C95E00C3AB14 /* Reader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reader.swift; sourceTree = "<group>"; };
+		1C8D819D23F03949008F4788 /* install.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = install.sh; sourceTree = "<group>"; };
 		1C8E38C223EA38BC0079F4D8 /* CustomIndex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomIndex.swift; sourceTree = "<group>"; };
 		1C9250FC23EC2BF800A149F3 /* Defaults.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Defaults.swift; sourceTree = "<group>"; };
+		1C996E7023F6063900C33991 /* DateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DateView.swift; path = pillz/View/DateView.swift; sourceTree = SOURCE_ROOT; };
 		1C9C22E723EB90F500D6990C /* ViewConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewConstants.swift; sourceTree = "<group>"; };
 		1C9C22E923EB980300D6990C /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		1C9EEE5F23E86CEB00814D5C /* LogView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogView.swift; sourceTree = "<group>"; };
@@ -126,6 +129,7 @@
 		1CDC954C23ABC713004B8666 = {
 			isa = PBXGroup;
 			children = (
+				1C8D819D23F03949008F4788 /* install.sh */,
 				1CDC955723ABC713004B8666 /* pillz */,
 				1C9EEEBC23E8A83500814D5C /* main.swift */,
 				1CDC955623ABC713004B8666 /* Products */,
@@ -159,6 +163,7 @@
 				1C9C22EC23EB98A400D6990C /* Log */,
 				1C8E38C223EA38BC0079F4D8 /* CustomIndex.swift */,
 				1C9C22E923EB980300D6990C /* Extensions.swift */,
+				1C996E7023F6063900C33991 /* DateView.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -244,6 +249,7 @@
 				1CA39B6323E8265100D5729C /* Action.swift in Sources */,
 				1CDC956023ABC791004B8666 /* Drug.swift in Sources */,
 				1C8E38C323EA38BC0079F4D8 /* CustomIndex.swift in Sources */,
+				1C996E7123F6063900C33991 /* DateView.swift in Sources */,
 				1C9EEE6023E86CEB00814D5C /* LogView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -286,7 +292,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 1.1.0;
+				CURRENT_PROJECT_VERSION = 1.5.0;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
@@ -353,7 +359,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 1.1.0;
+				CURRENT_PROJECT_VERSION = 1.5.0;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
