@@ -8,14 +8,17 @@
 
 let view = CustomView()
 
-switch CommandLine.arguments.last?.filter({ $0.isLetter }) {
-case "last":
-  view.last(5) // show the last 5
-case "help":
-  print(ViewConstants.usage)
-case "version":
-  view.printVersion()
-default:
+if let arg = CommandLine.arguments.last?.filter({ $0.isLetter }) {
+  switch arg {
+  case "last":
+    view.last(5) // show the last 5
+  case "version":
+    view.printVersion()
+  case "help":
+    fallthrough
+  default:
+    print(ViewConstants.usage)
+  }
+} else {
   view.run()
 }
-
