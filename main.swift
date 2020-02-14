@@ -6,19 +6,26 @@
 //  Copyright © 2020 viraltaco_. All rights reserved.
 //
 
-let view = CustomView()
+enum Argument: String {
+  case last = "last"
+  case logs = "logs"
+  case version = "version"
+  case help = "help"
+}
 
-if let arg = CommandLine.arguments.last?.filter({ $0.isLetter }) {
+let view = CustomView()
+if let line = CommandLine.arguments.last?.filter({ $0.isLetter }) {
+  let arg = Argument(rawValue: line)
   switch arg {
-  case "last":
+  case .last:
     view.last(5) // show the last 5
-  case "version":
+  case .logs:
+    view.printLogs()
+  case .version:
     view.printVersion()
-  case "help":
-    fallthrough
-  default:
+  case .help:
     print(ViewConstants.usage)
+  default:
+    view.run()
   }
-} else {
-  view.run()
 }
