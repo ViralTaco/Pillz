@@ -8,6 +8,7 @@
 
 struct ViewConstants {
   static let columns = 60 // number of chars in the view
+  static let spacing = 24 // spaces between name and dose
   static let clear = "\u{001B}[2J"
 
 // MARK: license
