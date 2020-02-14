@@ -8,7 +8,7 @@
 
 import Foundation
 
-enum Command: String {
+enum Command: String, CaseIterable {
   case back = "back"     // go back
   case help = "help"     // get help
   case clear = "clear"   // clear screen
