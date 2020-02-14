@@ -14,7 +14,6 @@ struct ViewConstants {
 
 // MARK: license
   static let license = """
-    pillz Copyright © 2019-\(DateView().year) Anthony Capobianco
     
       Permission is hereby granted, free of charge, to any person obtaining a copy of
       this software and associated documentation files (the "Software"), to deal in the
