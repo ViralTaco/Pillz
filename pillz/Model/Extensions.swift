@@ -33,3 +33,18 @@ extension Set {
     return self.remove(at: id)
   }
 }
+
+infix operator <->
+extension String {
+  internal func repeated(count: Int = 0) -> String {
+    guard count > 0 else { return self }
+    return Array(repeating: self, count: count).reduce("", { (s, next) in
+      return s + next
+    })
+  }
+  
+  static func <-> (lhs: String, rhs: String) -> String {
+    let spacing = abs(ViewConstants.spacing - (lhs.count + rhs.count))
+    return lhs + " ".repeated(count: spacing) + rhs
+  }
+}
