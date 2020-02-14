@@ -56,7 +56,8 @@ class CustomView {
   
   public func printVersion() -> Void {
     if let version = Bundle.main.infoDictionary?["CFBundleShortVersionString"] as? String {
-      print("pillz \(version)\nLicense:\n\(ViewConstants.license)")
+      print("pillz \(version) Copyright © 2019-\(DateView().year) "
+            + "Anthony Capobianco\n\(ViewConstants.license)")
     }
   }
   
