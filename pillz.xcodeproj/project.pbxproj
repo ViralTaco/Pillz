@@ -27,6 +27,8 @@
 		1C99711023F64E7700C33991 /* DateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C996E7023F6063900C33991 /* DateView.swift */; };
 		1C99711123F64E7700C33991 /* LogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C9EEE5F23E86CEB00814D5C /* LogView.swift */; };
 		1C99711323F64E7700C33991 /* Rainbow in Frameworks */ = {isa = PBXBuildFile; productRef = 1C9970FC23F64E7700C33991 /* Rainbow */; settings = {ATTRIBUTES = (Required, ); }; };
+		1C9D333623F7229B00244F1A /* LineNoise in Frameworks */ = {isa = PBXBuildFile; productRef = 1C9D333523F7229B00244F1A /* LineNoise */; };
+		1C9D333823F7236100244F1A /* CommandLineInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C9D333723F7236100244F1A /* CommandLineInterface.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXBuildRule section */
@@ -68,6 +70,7 @@
 		1C99711A23F64F1A00C33991 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1C9C22E723EB90F500D6990C /* ViewConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewConstants.swift; sourceTree = "<group>"; };
 		1C9C22E923EB980300D6990C /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		1C9D333723F7236100244F1A /* CommandLineInterface.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; path = CommandLineInterface.swift; sourceTree = "<group>"; };
 		1C9EEE5F23E86CEB00814D5C /* LogView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogView.swift; sourceTree = "<group>"; };
 		1C9EEE6123E886D300814D5C /* DrugView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrugView.swift; sourceTree = "<group>"; };
 		1C9EEEBC23E8A83500814D5C /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
@@ -86,6 +89,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1C99711323F64E7700C33991 /* Rainbow in Frameworks */,
+				1C9D333623F7229B00244F1A /* LineNoise in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -174,6 +178,7 @@
 		1CDC956123ABCAB2004B8666 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				1C9D333723F7236100244F1A /* CommandLineInterface.swift */,
 				1C9C22E723EB90F500D6990C /* ViewConstants.swift */,
 				1C9C22EB23EB989000D6990C /* Drug */,
 				1C9C22EC23EB98A400D6990C /* Log */,
@@ -204,6 +209,7 @@
 			name = pillz;
 			packageProductDependencies = (
 				1C9970FC23F64E7700C33991 /* Rainbow */,
+				1C9D333523F7229B00244F1A /* LineNoise */,
 			);
 			productName = pilllog;
 			productReference = 1C99711923F64E7700C33991 /* pillz */;
@@ -230,6 +236,7 @@
 			mainGroup = 1CDC954C23ABC713004B8666;
 			packageReferences = (
 				1C9250F923EC2AE700A149F3 /* XCRemoteSwiftPackageReference "Rainbow" */,
+				1C9D333423F7229B00244F1A /* XCRemoteSwiftPackageReference "linenoise-swift" */,
 			);
 			productRefGroup = 1CDC955623ABC713004B8666 /* Products */;
 			projectDirPath = "";
@@ -259,6 +266,7 @@
 				1C99710A23F64E7700C33991 /* DrugView.swift in Sources */,
 				1C99710B23F64E7700C33991 /* ViewConstants.swift in Sources */,
 				1C99710C23F64E7700C33991 /* main.swift in Sources */,
+				1C9D333823F7236100244F1A /* CommandLineInterface.swift in Sources */,
 				1C99710D23F64E7700C33991 /* Action.swift in Sources */,
 				1C99710E23F64E7700C33991 /* Drug.swift in Sources */,
 				1C99710F23F64E7700C33991 /* CustomIndex.swift in Sources */,
@@ -295,7 +303,7 @@
 				LLVM_LTO = YES_THIN;
 				LOCALIZED_STRING_SWIFTUI_SUPPORT = NO;
 				MACOSX_DEPLOYMENT_TARGET = 10.15;
-				MARKETING_VERSION = 1.5.6;
+				MARKETING_VERSION = 1.6.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.viraltaco.pillz;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_DISABLE_SAFETY_CHECKS = YES;
@@ -324,7 +332,7 @@
 				LLVM_LTO = YES_THIN;
 				LOCALIZED_STRING_SWIFTUI_SUPPORT = NO;
 				MACOSX_DEPLOYMENT_TARGET = 10.15;
-				MARKETING_VERSION = 1.5.6;
+				MARKETING_VERSION = 1.6.0;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = com.viraltaco.pillz;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -503,6 +511,14 @@
 				minimumVersion = 3.1.5;
 			};
 		};
+		1C9D333423F7229B00244F1A /* XCRemoteSwiftPackageReference "linenoise-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/andybest/linenoise-swift.git";
+			requirement = {
+				kind = upToNextMinorVersion;
+				minimumVersion = 0.0.3;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -515,6 +531,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 1C9970FD23F64E7700C33991 /* XCRemoteSwiftPackageReference "Rainbow" */;
 			productName = Rainbow;
+		};
+		1C9D333523F7229B00244F1A /* LineNoise */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1C9D333423F7229B00244F1A /* XCRemoteSwiftPackageReference "linenoise-swift" */;
+			productName = LineNoise;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
