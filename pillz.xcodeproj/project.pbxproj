@@ -7,30 +7,44 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1C3A566D23BFD0F50075D6B8 /* Log.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C3A566C23BFD0F50075D6B8 /* Log.swift */; };
-		1C3A566F23BFD9BB0075D6B8 /* LogList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C3A566E23BFD9BB0075D6B8 /* LogList.swift */; };
-		1C66A79723E4C92600C3AB14 /* Writer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C66A79623E4C92600C3AB14 /* Writer.swift */; };
-		1C66A79923E4C95E00C3AB14 /* Reader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C66A79823E4C95E00C3AB14 /* Reader.swift */; };
-		1C8E38C323EA38BC0079F4D8 /* CustomIndex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C8E38C223EA38BC0079F4D8 /* CustomIndex.swift */; };
-		1C9250FB23EC2AE700A149F3 /* Rainbow in Frameworks */ = {isa = PBXBuildFile; productRef = 1C9250FA23EC2AE700A149F3 /* Rainbow */; settings = {ATTRIBUTES = (Required, ); }; };
-		1C9250FD23EC2BF800A149F3 /* Defaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C9250FC23EC2BF800A149F3 /* Defaults.swift */; };
-		1C996E7123F6063900C33991 /* DateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C996E7023F6063900C33991 /* DateView.swift */; };
-		1C9C22E823EB90F500D6990C /* ViewConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C9C22E723EB90F500D6990C /* ViewConstants.swift */; };
-		1C9C22EA23EB980300D6990C /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C9C22E923EB980300D6990C /* Extensions.swift */; };
-		1C9EEE6023E86CEB00814D5C /* LogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C9EEE5F23E86CEB00814D5C /* LogView.swift */; };
-		1C9EEE6223E886D300814D5C /* DrugView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C9EEE6123E886D300814D5C /* DrugView.swift */; };
-		1C9EEEBD23E8A83500814D5C /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C9EEEBC23E8A83500814D5C /* main.swift */; };
-		1CA39B6323E8265100D5729C /* Action.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CA39B6223E8265100D5729C /* Action.swift */; };
-		1CA39B6523E85AD900D5729C /* CurrentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CA39B6423E85AD900D5729C /* CurrentView.swift */; };
-		1CA4FA0923BDF3D0002956F9 /* CustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CA4FA0823BDF3D0002956F9 /* CustomView.swift */; };
-		1CC95C8F23E62F87008E5CBA /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CC95C8E23E62F87008E5CBA /* App.swift */; };
-		1CC95C9123E6784C008E5CBA /* Command.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CC95C9023E6784C008E5CBA /* Command.swift */; };
-		1CDC956023ABC791004B8666 /* Drug.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CDC955F23ABC791004B8666 /* Drug.swift */; };
-		1CDC956323ABCACD004B8666 /* DrugList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CDC956223ABCACD004B8666 /* DrugList.swift */; };
+		1C9970FF23F64E7700C33991 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C9C22E923EB980300D6990C /* Extensions.swift */; };
+		1C99710023F64E7700C33991 /* Reader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C66A79823E4C95E00C3AB14 /* Reader.swift */; };
+		1C99710123F64E7700C33991 /* CustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CA4FA0823BDF3D0002956F9 /* CustomView.swift */; };
+		1C99710223F64E7700C33991 /* DrugList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CDC956223ABCACD004B8666 /* DrugList.swift */; };
+		1C99710323F64E7700C33991 /* LogList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C3A566E23BFD9BB0075D6B8 /* LogList.swift */; };
+		1C99710423F64E7700C33991 /* Writer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C66A79623E4C92600C3AB14 /* Writer.swift */; };
+		1C99710523F64E7700C33991 /* Command.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CC95C9023E6784C008E5CBA /* Command.swift */; };
+		1C99710623F64E7700C33991 /* Log.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C3A566C23BFD0F50075D6B8 /* Log.swift */; };
+		1C99710723F64E7700C33991 /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CC95C8E23E62F87008E5CBA /* App.swift */; };
+		1C99710823F64E7700C33991 /* Defaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C9250FC23EC2BF800A149F3 /* Defaults.swift */; };
+		1C99710923F64E7700C33991 /* CurrentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CA39B6423E85AD900D5729C /* CurrentView.swift */; };
+		1C99710A23F64E7700C33991 /* DrugView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C9EEE6123E886D300814D5C /* DrugView.swift */; };
+		1C99710B23F64E7700C33991 /* ViewConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C9C22E723EB90F500D6990C /* ViewConstants.swift */; };
+		1C99710C23F64E7700C33991 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C9EEEBC23E8A83500814D5C /* main.swift */; };
+		1C99710D23F64E7700C33991 /* Action.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CA39B6223E8265100D5729C /* Action.swift */; };
+		1C99710E23F64E7700C33991 /* Drug.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CDC955F23ABC791004B8666 /* Drug.swift */; };
+		1C99710F23F64E7700C33991 /* CustomIndex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C8E38C223EA38BC0079F4D8 /* CustomIndex.swift */; };
+		1C99711023F64E7700C33991 /* DateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C996E7023F6063900C33991 /* DateView.swift */; };
+		1C99711123F64E7700C33991 /* LogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C9EEE5F23E86CEB00814D5C /* LogView.swift */; };
+		1C99711323F64E7700C33991 /* Rainbow in Frameworks */ = {isa = PBXBuildFile; productRef = 1C9970FC23F64E7700C33991 /* Rainbow */; settings = {ATTRIBUTES = (Required, ); }; };
 /* End PBXBuildFile section */
 
+/* Begin PBXBuildRule section */
+		1C99711523F64E7700C33991 /* PBXBuildRule */ = {
+			isa = PBXBuildRule;
+			compilerSpec = com.apple.compilers.proxy.script;
+			fileType = text.plist;
+			inputFiles = (
+			);
+			isEditable = 1;
+			outputFiles = (
+			);
+			script = "# builtin-copyPlist\n";
+		};
+/* End PBXBuildRule section */
+
 /* Begin PBXCopyFilesBuildPhase section */
-		1CDC955323ABC713004B8666 /* CopyFiles */ = {
+		1C99711423F64E7700C33991 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 12;
 			dstPath = usr/local/bin;
@@ -50,6 +64,8 @@
 		1C8E38C223EA38BC0079F4D8 /* CustomIndex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomIndex.swift; sourceTree = "<group>"; };
 		1C9250FC23EC2BF800A149F3 /* Defaults.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Defaults.swift; sourceTree = "<group>"; };
 		1C996E7023F6063900C33991 /* DateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DateView.swift; path = pillz/View/DateView.swift; sourceTree = SOURCE_ROOT; };
+		1C99711923F64E7700C33991 /* pillz */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = pillz; sourceTree = BUILT_PRODUCTS_DIR; };
+		1C99711A23F64F1A00C33991 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1C9C22E723EB90F500D6990C /* ViewConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewConstants.swift; sourceTree = "<group>"; };
 		1C9C22E923EB980300D6990C /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		1C9EEE5F23E86CEB00814D5C /* LogView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogView.swift; sourceTree = "<group>"; };
@@ -60,17 +76,16 @@
 		1CA4FA0823BDF3D0002956F9 /* CustomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomView.swift; sourceTree = "<group>"; };
 		1CC95C8E23E62F87008E5CBA /* App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App.swift; sourceTree = "<group>"; };
 		1CC95C9023E6784C008E5CBA /* Command.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Command.swift; sourceTree = "<group>"; };
-		1CDC955523ABC713004B8666 /* pillz */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = pillz; sourceTree = BUILT_PRODUCTS_DIR; };
 		1CDC955F23ABC791004B8666 /* Drug.swift */ = {isa = PBXFileReference; indentWidth = 2; lastKnownFileType = sourcecode.swift; path = Drug.swift; sourceTree = "<group>"; tabWidth = 2; };
 		1CDC956223ABCACD004B8666 /* DrugList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrugList.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		1CDC955223ABC713004B8666 /* Frameworks */ = {
+		1C99711223F64E7700C33991 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1C9250FB23EC2AE700A149F3 /* Rainbow in Frameworks */,
+				1C99711323F64E7700C33991 /* Rainbow in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -129,6 +144,7 @@
 		1CDC954C23ABC713004B8666 = {
 			isa = PBXGroup;
 			children = (
+				1C99711A23F64F1A00C33991 /* Info.plist */,
 				1C8D819D23F03949008F4788 /* install.sh */,
 				1CDC955723ABC713004B8666 /* pillz */,
 				1C9EEEBC23E8A83500814D5C /* main.swift */,
@@ -140,7 +156,7 @@
 		1CDC955623ABC713004B8666 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				1CDC955523ABC713004B8666 /* pillz */,
+				1C99711923F64E7700C33991 /* pillz */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -171,24 +187,26 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		1CDC955423ABC713004B8666 /* pillz */ = {
+		1C9970FA23F64E7700C33991 /* pillz */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1CDC955C23ABC713004B8666 /* Build configuration list for PBXNativeTarget "pillz" */;
+			buildConfigurationList = 1C99711623F64E7700C33991 /* Build configuration list for PBXNativeTarget "pillz" */;
 			buildPhases = (
-				1CDC955123ABC713004B8666 /* Sources */,
-				1CDC955223ABC713004B8666 /* Frameworks */,
-				1CDC955323ABC713004B8666 /* CopyFiles */,
+				1C9970FE23F64E7700C33991 /* Sources */,
+				1C99711223F64E7700C33991 /* Frameworks */,
+				1C99711423F64E7700C33991 /* CopyFiles */,
 			);
 			buildRules = (
+				1C99711523F64E7700C33991 /* PBXBuildRule */,
 			);
 			dependencies = (
+				1C9970FB23F64E7700C33991 /* PBXTargetDependency */,
 			);
 			name = pillz;
 			packageProductDependencies = (
-				1C9250FA23EC2AE700A149F3 /* Rainbow */,
+				1C9970FC23F64E7700C33991 /* Rainbow */,
 			);
 			productName = pilllog;
-			productReference = 1CDC955523ABC713004B8666 /* pillz */;
+			productReference = 1C99711923F64E7700C33991 /* pillz */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
@@ -200,11 +218,6 @@
 				LastSwiftUpdateCheck = 1130;
 				LastUpgradeCheck = 1130;
 				ORGANIZATIONNAME = viraltaco_;
-				TargetAttributes = {
-					1CDC955423ABC713004B8666 = {
-						CreatedOnToolsVersion = 11.3;
-					};
-				};
 			};
 			buildConfigurationList = 1CDC955023ABC713004B8666 /* Build configuration list for PBXProject "pillz" */;
 			compatibilityVersion = "Xcode 11.0";
@@ -222,41 +235,107 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				1CDC955423ABC713004B8666 /* pillz */,
+				1C9970FA23F64E7700C33991 /* pillz */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		1CDC955123ABC713004B8666 /* Sources */ = {
+		1C9970FE23F64E7700C33991 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1C9C22EA23EB980300D6990C /* Extensions.swift in Sources */,
-				1C66A79923E4C95E00C3AB14 /* Reader.swift in Sources */,
-				1CA4FA0923BDF3D0002956F9 /* CustomView.swift in Sources */,
-				1CDC956323ABCACD004B8666 /* DrugList.swift in Sources */,
-				1C3A566F23BFD9BB0075D6B8 /* LogList.swift in Sources */,
-				1C66A79723E4C92600C3AB14 /* Writer.swift in Sources */,
-				1CC95C9123E6784C008E5CBA /* Command.swift in Sources */,
-				1C3A566D23BFD0F50075D6B8 /* Log.swift in Sources */,
-				1CC95C8F23E62F87008E5CBA /* App.swift in Sources */,
-				1C9250FD23EC2BF800A149F3 /* Defaults.swift in Sources */,
-				1CA39B6523E85AD900D5729C /* CurrentView.swift in Sources */,
-				1C9EEE6223E886D300814D5C /* DrugView.swift in Sources */,
-				1C9C22E823EB90F500D6990C /* ViewConstants.swift in Sources */,
-				1C9EEEBD23E8A83500814D5C /* main.swift in Sources */,
-				1CA39B6323E8265100D5729C /* Action.swift in Sources */,
-				1CDC956023ABC791004B8666 /* Drug.swift in Sources */,
-				1C8E38C323EA38BC0079F4D8 /* CustomIndex.swift in Sources */,
-				1C996E7123F6063900C33991 /* DateView.swift in Sources */,
-				1C9EEE6023E86CEB00814D5C /* LogView.swift in Sources */,
+				1C9970FF23F64E7700C33991 /* Extensions.swift in Sources */,
+				1C99710023F64E7700C33991 /* Reader.swift in Sources */,
+				1C99710123F64E7700C33991 /* CustomView.swift in Sources */,
+				1C99710223F64E7700C33991 /* DrugList.swift in Sources */,
+				1C99710323F64E7700C33991 /* LogList.swift in Sources */,
+				1C99710423F64E7700C33991 /* Writer.swift in Sources */,
+				1C99710523F64E7700C33991 /* Command.swift in Sources */,
+				1C99710623F64E7700C33991 /* Log.swift in Sources */,
+				1C99710723F64E7700C33991 /* App.swift in Sources */,
+				1C99710823F64E7700C33991 /* Defaults.swift in Sources */,
+				1C99710923F64E7700C33991 /* CurrentView.swift in Sources */,
+				1C99710A23F64E7700C33991 /* DrugView.swift in Sources */,
+				1C99710B23F64E7700C33991 /* ViewConstants.swift in Sources */,
+				1C99710C23F64E7700C33991 /* main.swift in Sources */,
+				1C99710D23F64E7700C33991 /* Action.swift in Sources */,
+				1C99710E23F64E7700C33991 /* Drug.swift in Sources */,
+				1C99710F23F64E7700C33991 /* CustomIndex.swift in Sources */,
+				1C99711023F64E7700C33991 /* DateView.swift in Sources */,
+				1C99711123F64E7700C33991 /* LogView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		1C9970FB23F64E7700C33991 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			productRef = 1C9970F823F64BDA00C33991 /* Rainbow */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		1C99711723F64E7700C33991 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CLANG_USE_OPTIMIZATION_PROFILE = NO;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CREATE_INFOPLIST_SECTION_IN_BINARY = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "";
+				DEVELOPMENT_TEAM = 88L87CZSR7;
+				GENERATE_PKGINFO_FILE = YES;
+				INFOPLIST_FILE = "$(SRCROOT)/Info.plist";
+				INFOPLIST_PREPROCESS = YES;
+				LLVM_LTO = YES_THIN;
+				LOCALIZED_STRING_SWIFTUI_SUPPORT = NO;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MARKETING_VERSION = 1.5.6;
+				PRODUCT_BUNDLE_IDENTIFIER = com.viraltaco.pillz;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_DISABLE_SAFETY_CHECKS = YES;
+				SWIFT_ENFORCE_EXCLUSIVE_ACCESS = "debug-only";
+				SWIFT_VERSION = 5.0;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Debug;
+		};
+		1C99711823F64E7700C33991 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CLANG_USE_OPTIMIZATION_PROFILE = NO;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CREATE_INFOPLIST_SECTION_IN_BINARY = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "";
+				DEVELOPMENT_TEAM = 88L87CZSR7;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GENERATE_PKGINFO_FILE = YES;
+				INFOPLIST_FILE = "$(SRCROOT)/Info.plist";
+				INFOPLIST_PREPROCESS = YES;
+				LLVM_LTO = YES_THIN;
+				LOCALIZED_STRING_SWIFTUI_SUPPORT = NO;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MARKETING_VERSION = 1.5.6;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.viraltaco.pillz;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_DISABLE_SAFETY_CHECKS = YES;
+				SWIFT_ENFORCE_EXCLUSIVE_ACCESS = "debug-only";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = build;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Release;
+		};
 		1CDC955A23ABC713004B8666 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -292,7 +371,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 1.5.0;
+				CURRENT_PROJECT_VERSION = 1.5.2;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
@@ -359,7 +438,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 1.5.0;
+				CURRENT_PROJECT_VERSION = 1.5.2;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -377,58 +456,9 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = macosx;
-				SWIFT_COMPILATION_MODE = singlefile;
+				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-			};
-			name = Release;
-		};
-		1CDC955D23ABC713004B8666 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
-				CLANG_USE_OPTIMIZATION_PROFILE = NO;
-				CODE_SIGN_IDENTITY = "-";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1.0.0;
-				DEVELOPMENT_TEAM = 88L87CZSR7;
-				INFOPLIST_FILE = "$(SRCROOT)/../../../swift/pillz/Info.plist";
-				LLVM_LTO = YES_THIN;
-				LOCALIZED_STRING_SWIFTUI_SUPPORT = NO;
-				MACOSX_DEPLOYMENT_TARGET = 10.15;
-				PRODUCT_BUNDLE_IDENTIFIER = com.viraltaco.pillz;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_DISABLE_SAFETY_CHECKS = YES;
-				SWIFT_ENFORCE_EXCLUSIVE_ACCESS = "debug-only";
-				SWIFT_VERSION = 5.0;
-				VERSIONING_SYSTEM = "apple-generic";
-			};
-			name = Debug;
-		};
-		1CDC955E23ABC713004B8666 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
-				CLANG_USE_OPTIMIZATION_PROFILE = NO;
-				CODE_SIGN_IDENTITY = "-";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1.0.0;
-				DEVELOPMENT_TEAM = 88L87CZSR7;
-				GCC_OPTIMIZATION_LEVEL = s;
-				INFOPLIST_FILE = "$(SRCROOT)/../../../swift/pillz/Info.plist";
-				LLVM_LTO = YES_THIN;
-				LOCALIZED_STRING_SWIFTUI_SUPPORT = NO;
-				MACOSX_DEPLOYMENT_TARGET = 10.15;
-				ONLY_ACTIVE_ARCH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = com.viraltaco.pillz;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_DISABLE_SAFETY_CHECKS = YES;
-				SWIFT_ENFORCE_EXCLUSIVE_ACCESS = "debug-only";
-				SWIFT_VERSION = 5.0;
-				SYMROOT = build;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Release;
@@ -436,20 +466,20 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		1C99711623F64E7700C33991 /* Build configuration list for PBXNativeTarget "pillz" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1C99711723F64E7700C33991 /* Debug */,
+				1C99711823F64E7700C33991 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		1CDC955023ABC713004B8666 /* Build configuration list for PBXProject "pillz" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1CDC955A23ABC713004B8666 /* Debug */,
 				1CDC955B23ABC713004B8666 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		1CDC955C23ABC713004B8666 /* Build configuration list for PBXNativeTarget "pillz" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				1CDC955D23ABC713004B8666 /* Debug */,
-				1CDC955E23ABC713004B8666 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -465,12 +495,25 @@
 				minimumVersion = 3.1.5;
 			};
 		};
+		1C9970FD23F64E7700C33991 /* XCRemoteSwiftPackageReference "Rainbow" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Rainbow";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.1.5;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		1C9250FA23EC2AE700A149F3 /* Rainbow */ = {
+		1C9970F823F64BDA00C33991 /* Rainbow */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 1C9250F923EC2AE700A149F3 /* XCRemoteSwiftPackageReference "Rainbow" */;
+			productName = Rainbow;
+		};
+		1C9970FC23F64E7700C33991 /* Rainbow */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1C9970FD23F64E7700C33991 /* XCRemoteSwiftPackageReference "Rainbow" */;
 			productName = Rainbow;
 		};
 /* End XCSwiftPackageProductDependency section */
