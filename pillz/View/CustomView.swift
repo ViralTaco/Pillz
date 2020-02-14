@@ -33,7 +33,7 @@ class CustomView {
 // MARK: public methods
   public func run() -> Never {
     _ = doAction(Action.back) // show main at start
-    while let line = sin.read() {
+    while let line = CustomView.prompt() {
       if let action = try? app.command(line) {
         if doAction(action) == App.stop { break }
         save() // MARK:  before running another action, just save.
@@ -64,7 +64,7 @@ class CustomView {
 // MARK: public static methods
   public static func confirm() -> Bool {
     print(ViewConstants.confirm)
-    if let answer = sin.read() {
+    if let answer = readLine() {
       if answer == "YES" { return true }
     }
     return false
@@ -135,5 +135,10 @@ class CustomView {
         drawMain()
       }
     }
+  }
+  
+  private static func prompt() -> String? {
+    print("\n" + ">".yellow, terminator: " ")
+    return readLine()
   }
 }
