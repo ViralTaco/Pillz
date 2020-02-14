@@ -76,8 +76,8 @@ struct ViewConstants {
   static let drug = "drug"
   static let dose = "dose"
   
-  static let mg = "mg".lightWhite
-  static let gram = "g".lightWhite
+  static let mg = "mg".italic
+  static let gram = "g".italic
   
 // MARK: Decoration:
   static let line = String(Array(repeating: "═",
