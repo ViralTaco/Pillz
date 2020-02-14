@@ -8,7 +8,8 @@
 
 struct ViewConstants {
   static let columns = 60 // number of chars in the view
-  static let spacing = columns / 2 // split view in half
+  // half of view + half date string length - lhs spacing - rhs spacing.
+  static let spacing = (columns / 2) + 12 - 2 - 6
   static let clear = "\u{001B}[2J"
 
 // MARK: license
