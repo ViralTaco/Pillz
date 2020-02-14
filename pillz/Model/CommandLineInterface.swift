@@ -15,6 +15,7 @@ class CommandLineInterface {
   private let sin: LineNoise
   private let prompt: String
   
+// MARK: inits
   required init(prompt: String = "> ".yellow) {
     self.sin = LineNoise()
     self.prompt = prompt
