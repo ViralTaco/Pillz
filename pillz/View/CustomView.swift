@@ -138,7 +138,6 @@ class CustomView {
   }
   
   private static func prompt() -> String? {
-    print("\n" + ">".yellow, terminator: " ")
-    return readLine()
+    return Standard.in.read()
   }
 }
