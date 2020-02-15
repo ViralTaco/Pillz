@@ -5,20 +5,36 @@
 //  Created by viraltaco_ on 20200214.
 //  Copyright © 2020 viraltaco_. All rights reserved.
 //
+import LineNoise
 
 struct StandardInImplementation {
-  let sin: CommandLineInterface
+  let prompt: String
+  let sin: LineNoise
   
 // MARK: inits
-  init(prompt: String = "> ".yellow,
-       completions: @escaping (String) -> ([String]) ) {
-    self.sin = CommandLineInterface(prompt: prompt)
+  init(prompt: String = "> ".yellow, completions: [String]) {
+    self.prompt = prompt
+    self.sin = LineNoise()
+    
+    self.sin.setCompletionCallback { buffer in
+      completions.filter { $0.hasPrefix(buffer) }
+    }
+    
+    self.sin.setHintsCallback { buffer in
+      let filtered = completions.filter { $0.hasPrefix(buffer) }
+      
+      if let hint = filtered.first {
+        return (String(hint.dropFirst(buffer.count)), (127, 0, 127))
+      } else {
+        return (nil, nil)
+      }
+    }
   }
  
 // MARK: public methods
-  func read() -> String? { return  self.sin.read() }
+  func read() -> String? {
+    return try? self.sin.getLine(prompt: self.prompt)
+  }
 }
 
-let sin = StandardInImplementation() { (buffer) in
-  Command.completionStrings().filter { $0.hasPrefix(buffer) }
-}
+let stdin = StandardInImplementation(completions: Command.completionStrings())
