@@ -37,4 +37,7 @@ struct StandardInImplementation {
   }
 }
 
-let stdin = StandardInImplementation(completions: Command.completionStrings())
+struct Standard {
+  public static let `in` =
+    StandardInImplementation(completions: Command.completionStrings())
+}
