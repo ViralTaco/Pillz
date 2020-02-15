@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1C9325EB23F756BB00425136 /* StandardInImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C9325EA23F756BB00425136 /* StandardInImplementation.swift */; };
 		1C9970FF23F64E7700C33991 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C9C22E923EB980300D6990C /* Extensions.swift */; };
 		1C99710023F64E7700C33991 /* Reader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C66A79823E4C95E00C3AB14 /* Reader.swift */; };
 		1C99710123F64E7700C33991 /* CustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CA4FA0823BDF3D0002956F9 /* CustomView.swift */; };
@@ -28,7 +29,6 @@
 		1C99711123F64E7700C33991 /* LogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C9EEE5F23E86CEB00814D5C /* LogView.swift */; };
 		1C99711323F64E7700C33991 /* Rainbow in Frameworks */ = {isa = PBXBuildFile; productRef = 1C9970FC23F64E7700C33991 /* Rainbow */; settings = {ATTRIBUTES = (Required, ); }; };
 		1C9D333623F7229B00244F1A /* LineNoise in Frameworks */ = {isa = PBXBuildFile; productRef = 1C9D333523F7229B00244F1A /* LineNoise */; };
-		1C9D333823F7236100244F1A /* CommandLineInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C9D333723F7236100244F1A /* CommandLineInterface.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXBuildRule section */
@@ -65,12 +65,12 @@
 		1C8D819D23F03949008F4788 /* install.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = install.sh; sourceTree = "<group>"; };
 		1C8E38C223EA38BC0079F4D8 /* CustomIndex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomIndex.swift; sourceTree = "<group>"; };
 		1C9250FC23EC2BF800A149F3 /* Defaults.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Defaults.swift; sourceTree = "<group>"; };
+		1C9325EA23F756BB00425136 /* StandardInImplementation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandardInImplementation.swift; sourceTree = "<group>"; };
 		1C996E7023F6063900C33991 /* DateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DateView.swift; path = pillz/View/DateView.swift; sourceTree = SOURCE_ROOT; };
 		1C99711923F64E7700C33991 /* pillz */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = pillz; sourceTree = BUILT_PRODUCTS_DIR; };
 		1C99711A23F64F1A00C33991 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1C9C22E723EB90F500D6990C /* ViewConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewConstants.swift; sourceTree = "<group>"; };
 		1C9C22E923EB980300D6990C /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
-		1C9D333723F7236100244F1A /* CommandLineInterface.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; path = CommandLineInterface.swift; sourceTree = "<group>"; };
 		1C9EEE5F23E86CEB00814D5C /* LogView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogView.swift; sourceTree = "<group>"; };
 		1C9EEE6123E886D300814D5C /* DrugView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrugView.swift; sourceTree = "<group>"; };
 		1C9EEEBC23E8A83500814D5C /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
@@ -141,6 +141,7 @@
 				1CA39B6223E8265100D5729C /* Action.swift */,
 				1C66A79623E4C92600C3AB14 /* Writer.swift */,
 				1C66A79823E4C95E00C3AB14 /* Reader.swift */,
+				1C9325EA23F756BB00425136 /* StandardInImplementation.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -178,7 +179,6 @@
 		1CDC956123ABCAB2004B8666 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				1C9D333723F7236100244F1A /* CommandLineInterface.swift */,
 				1C9C22E723EB90F500D6990C /* ViewConstants.swift */,
 				1C9C22EB23EB989000D6990C /* Drug */,
 				1C9C22EC23EB98A400D6990C /* Log */,
@@ -266,10 +266,10 @@
 				1C99710A23F64E7700C33991 /* DrugView.swift in Sources */,
 				1C99710B23F64E7700C33991 /* ViewConstants.swift in Sources */,
 				1C99710C23F64E7700C33991 /* main.swift in Sources */,
-				1C9D333823F7236100244F1A /* CommandLineInterface.swift in Sources */,
 				1C99710D23F64E7700C33991 /* Action.swift in Sources */,
 				1C99710E23F64E7700C33991 /* Drug.swift in Sources */,
 				1C99710F23F64E7700C33991 /* CustomIndex.swift in Sources */,
+				1C9325EB23F756BB00425136 /* StandardInImplementation.swift in Sources */,
 				1C99711023F64E7700C33991 /* DateView.swift in Sources */,
 				1C99711123F64E7700C33991 /* LogView.swift in Sources */,
 			);
@@ -303,7 +303,7 @@
 				LLVM_LTO = YES_THIN;
 				LOCALIZED_STRING_SWIFTUI_SUPPORT = NO;
 				MACOSX_DEPLOYMENT_TARGET = 10.15;
-				MARKETING_VERSION = 1.6.0;
+				MARKETING_VERSION = 1.7.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.viraltaco.pillz;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_DISABLE_SAFETY_CHECKS = YES;
@@ -332,7 +332,7 @@
 				LLVM_LTO = YES_THIN;
 				LOCALIZED_STRING_SWIFTUI_SUPPORT = NO;
 				MACOSX_DEPLOYMENT_TARGET = 10.15;
-				MARKETING_VERSION = 1.6.0;
+				MARKETING_VERSION = 1.7.1;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = com.viraltaco.pillz;
 				PRODUCT_NAME = "$(TARGET_NAME)";
