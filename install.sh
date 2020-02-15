@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/bin/sh
 
 # Make sure this file has chmod +x before running.
 if [ $USER != 'root' ]; then 
