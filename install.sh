@@ -8,7 +8,7 @@ else
   # TODO: Compilation script.
 
   rm /usr/local/bin/pillz
-  cp ./Build/Products/Release/pillz /usr/local/bin/pillz
+  cp ./Build/Products/Release/Pillz /usr/local/bin/pillz
   
   if [ $? -eq 0 ]; then
     echo 'Application installed. You can run it by typing pillz'
