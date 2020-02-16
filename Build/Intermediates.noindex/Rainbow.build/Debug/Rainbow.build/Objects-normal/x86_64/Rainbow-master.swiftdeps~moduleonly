@@ -1,15 +1,15 @@
 version: "Apple Swift version 5.1.3 (swiftlang-1100.0.282.1 clang-1100.0.33.15)"
-options: "8d76b8c6706b4d4502bb2d190f2e6026"
-build_time: [1581026783, 292427000]
+options: "d46c41ef8abcef3c5086d3ff243a1d89"
+build_time: [1581806102, 153596000]
 inputs:
-  "/Users/taco/Library/Developer/Xcode/DerivedData/pillz-bzarpryepuhnyiagawxbpzbmwwkv/SourcePackages/checkouts/Rainbow/Sources/BackgroundColor.swift": [1581026781, 650755029]
-  "/Users/taco/Library/Developer/Xcode/DerivedData/pillz-bzarpryepuhnyiagawxbpzbmwwkv/SourcePackages/checkouts/Rainbow/Sources/CodesParser.swift": [1581026781, 651174578]
-  "/Users/taco/Library/Developer/Xcode/DerivedData/pillz-bzarpryepuhnyiagawxbpzbmwwkv/SourcePackages/checkouts/Rainbow/Sources/Color.swift": [1581026781, 651535359]
-  "/Users/taco/Library/Developer/Xcode/DerivedData/pillz-bzarpryepuhnyiagawxbpzbmwwkv/SourcePackages/checkouts/Rainbow/Sources/ControlCode.swift": [1581026781, 769091608]
-  "/Users/taco/Library/Developer/Xcode/DerivedData/pillz-bzarpryepuhnyiagawxbpzbmwwkv/SourcePackages/checkouts/Rainbow/Sources/ModesExtractor.swift": [1581026781, 652615709]
-  "/Users/taco/Library/Developer/Xcode/DerivedData/pillz-bzarpryepuhnyiagawxbpzbmwwkv/SourcePackages/checkouts/Rainbow/Sources/OutputTarget.swift": [1581026781, 653072505]
-  "/Users/taco/Library/Developer/Xcode/DerivedData/pillz-bzarpryepuhnyiagawxbpzbmwwkv/SourcePackages/checkouts/Rainbow/Sources/Rainbow.swift": [1581026781, 769299525]
-  "/Users/taco/Library/Developer/Xcode/DerivedData/pillz-bzarpryepuhnyiagawxbpzbmwwkv/SourcePackages/checkouts/Rainbow/Sources/String+Rainbow.swift": [1581026781, 654209435]
-  "/Users/taco/Library/Developer/Xcode/DerivedData/pillz-bzarpryepuhnyiagawxbpzbmwwkv/SourcePackages/checkouts/Rainbow/Sources/StringGenerator.swift": [1581026781, 654593251]
-  "/Users/taco/Library/Developer/Xcode/DerivedData/pillz-bzarpryepuhnyiagawxbpzbmwwkv/SourcePackages/checkouts/Rainbow/Sources/Style.swift": [1581026781, 654940528]
-  "/Users/taco/Library/Developer/Xcode/DerivedData/pillz-bzarpryepuhnyiagawxbpzbmwwkv/SourcePackages/checkouts/Rainbow/Sources/XcodeColorsSupport.swift": [1581026781, 655339627]
+  "/Users/taco/Library/Developer/Xcode/DerivedData/Pillz-alugsjeznglidbfnwrqqovnlnewj/SourcePackages/checkouts/Rainbow/Sources/BackgroundColor.swift": [1581795667, 799803324]
+  "/Users/taco/Library/Developer/Xcode/DerivedData/Pillz-alugsjeznglidbfnwrqqovnlnewj/SourcePackages/checkouts/Rainbow/Sources/CodesParser.swift": [1581795667, 800043254]
+  "/Users/taco/Library/Developer/Xcode/DerivedData/Pillz-alugsjeznglidbfnwrqqovnlnewj/SourcePackages/checkouts/Rainbow/Sources/Color.swift": [1581795667, 800263891]
+  "/Users/taco/Library/Developer/Xcode/DerivedData/Pillz-alugsjeznglidbfnwrqqovnlnewj/SourcePackages/checkouts/Rainbow/Sources/ControlCode.swift": [1581795667, 928884658]
+  "/Users/taco/Library/Developer/Xcode/DerivedData/Pillz-alugsjeznglidbfnwrqqovnlnewj/SourcePackages/checkouts/Rainbow/Sources/ModesExtractor.swift": [1581795667, 800889779]
+  "/Users/taco/Library/Developer/Xcode/DerivedData/Pillz-alugsjeznglidbfnwrqqovnlnewj/SourcePackages/checkouts/Rainbow/Sources/OutputTarget.swift": [1581795667, 801203371]
+  "/Users/taco/Library/Developer/Xcode/DerivedData/Pillz-alugsjeznglidbfnwrqqovnlnewj/SourcePackages/checkouts/Rainbow/Sources/Rainbow.swift": [1581795667, 929123268]
+  "/Users/taco/Library/Developer/Xcode/DerivedData/Pillz-alugsjeznglidbfnwrqqovnlnewj/SourcePackages/checkouts/Rainbow/Sources/String+Rainbow.swift": [1581795667, 801949642]
+  "/Users/taco/Library/Developer/Xcode/DerivedData/Pillz-alugsjeznglidbfnwrqqovnlnewj/SourcePackages/checkouts/Rainbow/Sources/StringGenerator.swift": [1581795667, 802272784]
+  "/Users/taco/Library/Developer/Xcode/DerivedData/Pillz-alugsjeznglidbfnwrqqovnlnewj/SourcePackages/checkouts/Rainbow/Sources/Style.swift": [1581795667, 802505695]
+  "/Users/taco/Library/Developer/Xcode/DerivedData/Pillz-alugsjeznglidbfnwrqqovnlnewj/SourcePackages/checkouts/Rainbow/Sources/XcodeColorsSupport.swift": [1581795667, 802802488]

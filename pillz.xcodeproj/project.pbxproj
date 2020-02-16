@@ -29,25 +29,10 @@
 		1CC7E58623F885830047B280 /* DateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CC7E57123F885830047B280 /* DateView.swift */; };
 		1CC7E58723F885830047B280 /* DrugView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CC7E57223F885830047B280 /* DrugView.swift */; };
 		1CC7E58823F885830047B280 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CC7E57323F885830047B280 /* main.swift */; };
-		1CC7E59423F8883A0047B280 /* PillzTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CC7E59323F8883A0047B280 /* PillzTests.swift */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXBuildRule section */
-		1C99711523F64E7700C33991 /* PBXBuildRule */ = {
-			isa = PBXBuildRule;
-			compilerSpec = com.apple.compilers.proxy.script;
-			fileType = text.plist;
-			inputFiles = (
-			);
-			isEditable = 1;
-			outputFiles = (
-			);
-			script = "# builtin-copyPlist\n";
-		};
-/* End PBXBuildRule section */
-
 /* Begin PBXContainerItemProxy section */
-		1CC7E59923F888830047B280 /* PBXContainerItemProxy */ = {
+		1CC7E5C323F8A2890047B280 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 1CDC954D23ABC713004B8666 /* Project object */;
 			proxyType = 1;
@@ -156,8 +141,8 @@
 			children = (
 				1CC7E56423F885830047B280 /* ViewConstants.swift */,
 				1CC7E56523F885830047B280 /* Extensions.swift */,
-				1CC7E56623F885830047B280 /* Log */,
 				1CC7E56923F885830047B280 /* CustomIndex.swift */,
+				1CC7E56623F885830047B280 /* Log */,
 				1CC7E56A23F885830047B280 /* Drug */,
 			);
 			path = Model;
@@ -235,9 +220,10 @@
 				1C99711423F64E7700C33991 /* CopyFiles */,
 			);
 			buildRules = (
-				1C99711523F64E7700C33991 /* PBXBuildRule */,
 			);
 			dependencies = (
+				1CC7E5A123F894370047B280 /* PBXTargetDependency */,
+				1CC7E59F23F894300047B280 /* PBXTargetDependency */,
 			);
 			name = pillz;
 			packageProductDependencies = (
@@ -259,7 +245,9 @@
 			buildRules = (
 			);
 			dependencies = (
-				1CC7E59A23F888830047B280 /* PBXTargetDependency */,
+				1CC7E5C423F8A2890047B280 /* PBXTargetDependency */,
+				1CC7E5C623F8A2890047B280 /* PBXTargetDependency */,
+				1CC7E5C823F8A2890047B280 /* PBXTargetDependency */,
 			);
 			name = PillzTests;
 			productName = PillzTests;
@@ -346,17 +334,32 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1CC7E59423F8883A0047B280 /* PillzTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		1CC7E59A23F888830047B280 /* PBXTargetDependency */ = {
+		1CC7E59F23F894300047B280 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			productRef = 1CC7E59E23F894300047B280 /* Rainbow */;
+		};
+		1CC7E5A123F894370047B280 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			productRef = 1CC7E5A023F894370047B280 /* LineNoise */;
+		};
+		1CC7E5C423F8A2890047B280 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 1C9970FA23F64E7700C33991 /* pillz */;
-			targetProxy = 1CC7E59923F888830047B280 /* PBXContainerItemProxy */;
+			targetProxy = 1CC7E5C323F8A2890047B280 /* PBXContainerItemProxy */;
+		};
+		1CC7E5C623F8A2890047B280 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			productRef = 1CC7E5C523F8A2890047B280 /* Rainbow */;
+		};
+		1CC7E5C823F8A2890047B280 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			productRef = 1CC7E5C723F8A2890047B280 /* LineNoise */;
 		};
 /* End PBXTargetDependency section */
 
@@ -364,7 +367,9 @@
 		1C99711723F64E7700C33991 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
 				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				BUNDLE_LOADER = "";
 				CLANG_USE_OPTIMIZATION_PROFILE = NO;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
@@ -380,13 +385,17 @@
 				LLVM_LTO = YES_THIN;
 				LOCALIZED_STRING_SWIFTUI_SUPPORT = NO;
 				MACOSX_DEPLOYMENT_TARGET = 10.15;
-				MARKETING_VERSION = 1.7.2;
+				MARKETING_VERSION = 1.7.3;
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = com.viraltaco.pillz;
 				PRODUCT_MODULE_NAME = "$(PRODUCT_NAME)";
 				PRODUCT_NAME = "$(PROJECT_NAME)";
+				STRIP_INSTALLED_PRODUCT = YES;
+				STRIP_STYLE = "non-global";
 				SWIFT_DISABLE_SAFETY_CHECKS = YES;
 				SWIFT_ENFORCE_EXCLUSIVE_ACCESS = "debug-only";
 				SWIFT_VERSION = 5.0;
+				TEST_HOST = "";
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Debug;
@@ -394,7 +403,9 @@
 		1C99711823F64E7700C33991 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
 				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				BUNDLE_LOADER = "";
 				CLANG_USE_OPTIMIZATION_PROFILE = NO;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
@@ -403,6 +414,7 @@
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_ASSET_PATHS = "";
 				DEVELOPMENT_TEAM = 88L87CZSR7;
+				ENABLE_TESTABILITY = NO;
 				GCC_OPTIMIZATION_LEVEL = s;
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				GENERATE_PKGINFO_FILE = YES;
@@ -411,15 +423,19 @@
 				LLVM_LTO = YES_THIN;
 				LOCALIZED_STRING_SWIFTUI_SUPPORT = NO;
 				MACOSX_DEPLOYMENT_TARGET = 10.15;
-				MARKETING_VERSION = 1.7.2;
-				ONLY_ACTIVE_ARCH = YES;
+				MARKETING_VERSION = 1.7.3;
+				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = com.viraltaco.pillz;
 				PRODUCT_MODULE_NAME = "$(PRODUCT_NAME)";
 				PRODUCT_NAME = "$(PROJECT_NAME)";
+				STRIP_INSTALLED_PRODUCT = YES;
+				STRIP_STYLE = "non-global";
+				STRIP_SWIFT_SYMBOLS = YES;
 				SWIFT_DISABLE_SAFETY_CHECKS = YES;
 				SWIFT_ENFORCE_EXCLUSIVE_ACCESS = "debug-only";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = build;
+				TEST_HOST = "";
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Release;
@@ -427,40 +443,47 @@
 		1CC7E59723F8883A0047B280 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Products/Debug/pillz";
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 88L87CZSR7;
+				ENABLE_TESTABILITY = YES;
 				INFOPLIST_FILE = PillzTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 					"@loader_path/../Frameworks",
 				);
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = com.viraltaco.PillzTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
 				SWIFT_VERSION = 5.0;
-				TEST_HOST = "$(BUNDLE_LOADER)";
 			};
 			name = Debug;
 		};
 		1CC7E59823F8883A0047B280 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Products/Release/pillz";
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 88L87CZSR7;
+				ENABLE_TESTABILITY = NO;
 				INFOPLIST_FILE = PillzTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 					"@loader_path/../Frameworks",
 				);
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = com.viraltaco.PillzTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				STRIP_SWIFT_SYMBOLS = NO;
 				SWIFT_VERSION = 5.0;
-				TEST_HOST = "$(BUNDLE_LOADER)";
 			};
 			name = Release;
 		};
@@ -499,8 +522,9 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 1.5.2;
+				CURRENT_PROJECT_VERSION = 1.7.3;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -526,6 +550,7 @@
 				SDKROOT = macosx;
 				STRIP_SWIFT_SYMBOLS = NO;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				VERSIONING_SYSTEM = "apple-generic";
 			};
@@ -566,10 +591,12 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 1.5.2;
+				CURRENT_PROJECT_VERSION = 1.7.3;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = fast;
@@ -657,6 +684,26 @@
 			productName = Rainbow;
 		};
 		1C9D333523F7229B00244F1A /* LineNoise */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1C9D333423F7229B00244F1A /* XCRemoteSwiftPackageReference "linenoise-swift" */;
+			productName = LineNoise;
+		};
+		1CC7E59E23F894300047B280 /* Rainbow */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1C9250F923EC2AE700A149F3 /* XCRemoteSwiftPackageReference "Rainbow" */;
+			productName = Rainbow;
+		};
+		1CC7E5A023F894370047B280 /* LineNoise */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1C9D333423F7229B00244F1A /* XCRemoteSwiftPackageReference "linenoise-swift" */;
+			productName = LineNoise;
+		};
+		1CC7E5C523F8A2890047B280 /* Rainbow */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1C9250F923EC2AE700A149F3 /* XCRemoteSwiftPackageReference "Rainbow" */;
+			productName = Rainbow;
+		};
+		1CC7E5C723F8A2890047B280 /* LineNoise */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 1C9D333423F7229B00244F1A /* XCRemoteSwiftPackageReference "linenoise-swift" */;
 			productName = LineNoise;

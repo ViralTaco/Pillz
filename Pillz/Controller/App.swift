@@ -79,7 +79,7 @@ class App {
   
   public func addLog(for drug: Drug?, selection: Int) {
     let count = drug?.doseCount ?? -1
-    guard count >= selection  && selection >= 0 else { return }
+    guard selection < count  && selection >= 0 else { return }
     
     self.logs += Log(drug: drug, selection: selection)
   }

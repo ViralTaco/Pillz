@@ -6,13 +6,15 @@
 //  Copyright © 2020 viraltaco_. All rights reserved.
 //
 
+import Foundation
 import XCTest
-import Pillz
+@testable import Pillz
 
 class PillzTests: XCTestCase {
+  var testDir: URL? = nil
   
   override func setUp() {
-    // Put setup code here. This method is called before the invocation of each test method in the class.
+    self.testDir = Defaults.folder(name: "PillzTest")
   }
   
   override func tearDown() {
