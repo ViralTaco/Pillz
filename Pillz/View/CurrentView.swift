@@ -21,17 +21,17 @@ enum CurrentView: Equatable {
   }
 
   func draw() {
-    CurrentView.clear()
+    if self != .last && self != .logs { CurrentView.clear() } 
     switch self {
     case .help:
       print(CurrentView.boxed(ViewConstants.help))
+      fallthrough
+    case .logs, .last:
       print(ViewConstants.footer)
     case .error(let msg):
       print(CurrentView.boxed(msg))
     case .drug, .main:
       banner()
-    default:
-      return
     }
   }
   

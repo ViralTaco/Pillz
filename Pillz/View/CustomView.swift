@@ -36,7 +36,7 @@ class CustomView {
     while let line = CustomView.prompt() {
       if let action = try? app.command(line) {
         if doAction(action) == App.stop { break }
-        save() // MARK:  before running another action, just save.
+        save() // MARK: save
       }
     }
     return exit(EXIT_SUCCESS)
@@ -77,10 +77,10 @@ class CustomView {
       drawMain()
     case .last(let selection):
       self.last(selection)
-      drawMain()
+      setCurrent(.last)
     case .logs(let logs):
-      self.current = .logs
       LogView.print(logs)
+      setCurrent(.logs)
     case .help:
       setCurrent(.help)
     case .select(let selection):
