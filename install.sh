@@ -35,7 +35,7 @@ fi # [ -f $PRODUCT_PATH ]
 echo "Copying $PRODUCT_NAME to $PRODUCT_PATH..."
 if cp $BUILD_PATH $PRODUCT_PATH; then
     echo 'Done.'
-    echo 'Application installed. You can run it by typing $PRODUCT_NAME'
+    echo "Application installed. You can run it by typing $PRODUCT_NAME"
 else # Couldn't copy file. 
     echo 'Failed.'
     echo 'Could not complete installation.'
