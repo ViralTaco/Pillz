@@ -5,7 +5,7 @@ if [ $USER != 'root' ]; then
   echo 'Insufficient priviledges to run the install script.'
 else
 
-  xcodebuold -project ./Pillz.xcodeproj -scheme pilllog
+  xcodebuild -project ./Pillz.xcodeproj -scheme pilllog
   rm /usr/local/bin/pillz
   cp ./Build/Products/Release/Pillz /usr/local/bin/pillz
   
