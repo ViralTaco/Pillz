@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1C6CF2A823F999A0000153FA /* PillzTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CC7E59323F8883A0047B280 /* PillzTests.swift */; };
 		1C99711323F64E7700C33991 /* Rainbow in Frameworks */ = {isa = PBXBuildFile; productRef = 1C9970FC23F64E7700C33991 /* Rainbow */; settings = {ATTRIBUTES = (Required, ); }; };
 		1C9D333623F7229B00244F1A /* LineNoise in Frameworks */ = {isa = PBXBuildFile; productRef = 1C9D333523F7229B00244F1A /* LineNoise */; };
 		1CC7E57523F885830047B280 /* Reader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CC7E55C23F885830047B280 /* Reader.swift */; };
@@ -334,6 +335,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1C6CF2A823F999A0000153FA /* PillzTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -385,7 +387,7 @@
 				LLVM_LTO = YES_THIN;
 				LOCALIZED_STRING_SWIFTUI_SUPPORT = NO;
 				MACOSX_DEPLOYMENT_TARGET = 10.15;
-				MARKETING_VERSION = 1.7.3;
+				MARKETING_VERSION = 1.8.0;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = com.viraltaco.pillz;
 				PRODUCT_MODULE_NAME = "$(PRODUCT_NAME)";
@@ -423,7 +425,7 @@
 				LLVM_LTO = YES_THIN;
 				LOCALIZED_STRING_SWIFTUI_SUPPORT = NO;
 				MACOSX_DEPLOYMENT_TARGET = 10.15;
-				MARKETING_VERSION = 1.7.3;
+				MARKETING_VERSION = 1.8.0;
 				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = com.viraltaco.pillz;
 				PRODUCT_MODULE_NAME = "$(PRODUCT_NAME)";
