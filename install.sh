@@ -1,19 +1,44 @@
 #!/bin/sh
 
-# Make sure this file has chmod +x before running.
-if [ $USER != 'root' ]; then 
-  echo 'Insufficient priviledges to run the install script.'
-else
+# Constants:
+BUILD_NAME='Pillz'
+PRODUCT_NAME='pillz'
 
-  xcodebuild -project ./Pillz.xcodeproj -scheme pilllog
-  rm /usr/local/bin/pillz
-  cp ./Build/Products/Release/Pillz /usr/local/bin/pillz
-  
-  if [ $? -eq 0 ]; then
-    echo 'Application installed. You can run it by typing pillz'
-  else
-    echo 'Could not complete installation. Makes sure to run as root.'
-  fi
-  
-  exit $?
+BUILD_PATH="./Build/Products/Release/$BUILD_NAME"
+PRODUCT_PATH="/usr/local/bin/$PRODUCT_NAME"
+
+WORKSPACE="$BUILD_NAME.xcworkspace"
+SCHEME='pilllog'
+
+# Make sure to have root
+if [ $USER != 'root' ]; then 
+    echo 'You need root to run this script.'
+    su
 fi
+
+# Compile:
+echo 'Compiling...'
+if xcodebuild -workspace $WORKSPACE -scheme $SCHEME; then
+    echo 'Done.'
+else # xcodebuild failed.
+    echo 'Could not compile. Try building using Xcode'
+fi
+
+# Remove current install if it exists:
+if [ -f $PRODUCT_PATH ]; then
+    echo 'Removing previous version...'
+    rm $PRODUCT_PATH ||: # rm .. or true (don't print error)
+    echo 'Done.'
+fi # [ -f $PRODUCT_PATH ]
+    
+# Copy built product to the bin folder
+echo "Copying $PRODUCT_NAME to $PRODUCT_PATH..."
+if cp $BUILD_PATH $PRODUCT_PATH; then
+    echo 'Done.'
+    echo 'Application installed. You can run it by typing $PRODUCT_NAME'
+else # Couldn't copy file. 
+    echo 'Failed.'
+    echo 'Could not complete installation.'
+fi
+
+exit $?
