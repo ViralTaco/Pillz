@@ -11,9 +11,10 @@ WORKSPACE="$BUILD_NAME.xcworkspace"
 SCHEME='pilllog'
 
 # Make sure to have root
-if [ $USER != 'root' ]; then 
+if [ $EUID != 0 ]; then 
     echo 'You need root to run this script.'
-    su
+    sudo "$0" "$@"
+    exit $?
 fi
 
 # Compile:
