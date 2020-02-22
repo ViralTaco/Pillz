@@ -19,7 +19,7 @@ fi
 
 # Compile:
 echo 'Compiling...'
-if xcodebuild -workspace $WORKSPACE -scheme $SCHEME; then
+if xcodebuild -workspace $WORKSPACE -scheme $SCHEME -quiet; then
     echo 'Done.'
 else # xcodebuild failed.
     echo 'Could not compile. Try building using Xcode'
