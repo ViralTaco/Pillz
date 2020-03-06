@@ -129,7 +129,7 @@ class CustomView {
   private func select(_ selection: String) -> Void {
     if let index = ID(selection) {
       if self.current != CurrentView.drug {
-        self.drug = app.drugs[Int(index)]
+        self.drug = app.drugList.at(Int(index))
         guard self.drug != nil else {
           drawMain()
           return
