@@ -36,6 +36,7 @@ struct LogView {
   }
   
   static func print(_ logs: [Log]) -> Void {
+    guard !logs.isEmpty else { return }
     Swift.print() // new line
     CurrentView.separator()
     for i in 0..<logs.count {

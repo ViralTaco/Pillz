@@ -127,11 +127,15 @@ class CustomView {
   }
   
   private func select(_ selection: String) -> Void {
-    CurrentView.clear()
     if let index = ID(selection) {
       if self.current != CurrentView.drug {
+        self.drug = app.drugs[Int(index)]
+        guard self.drug != nil else {
+          drawMain()
+          return
+        }
+        
         setCurrent(.drug)
-        self.drug = app.drugList[Int(index)]
         LogView.print(app.logs.last(for: self.drug))
         DrugView.print(self.drug)
       } else {
