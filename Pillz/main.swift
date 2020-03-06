@@ -10,6 +10,7 @@ enum Argument: String {
   case last = "last"
   case logs = "logs"
   case version = "version"
+  case license = "license"
   case help = "help"
 }
 
@@ -29,6 +30,8 @@ case .logs:
   view.printLogs()
 case .version:
   view.printVersion()
+case .license:
+  view.printLicense()
 default:
   view.run()
 }
