@@ -56,9 +56,14 @@ class CustomView {
   
   public func printVersion() -> Void {
     if let version = Bundle.main.infoDictionary?["CFBundleShortVersionString"] as? String {
-      print("pillz \(version) Copyright © 2019-\(DateView().year) "
-            + "Anthony Capobianco\n\(ViewConstants.license)")
+      print("pillz \(version)\n"
+          + "Copyright © 2019-\(DateView().year) Anthony Capobianco")
     }
+  }
+  
+  public func printLicense() -> Void {
+    printVersion()
+    print(ViewConstants.license)
   }
   
 // MARK: public static methods
