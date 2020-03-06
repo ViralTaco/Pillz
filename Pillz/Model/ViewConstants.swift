@@ -36,16 +36,16 @@ struct ViewConstants {
   
 // MARK: usage
   static let usage = """
-      Usage:
-        pillz [option]
-      
-      options:
-        last [N]              Print last N logs
-        logs                  Print all the logs
-        help, --help          Print this help screen
-        version, --version    Print pillz version
-        license, --license    Print pillz license
-      """
+    Usage:
+      pillz [option]
+    
+    options:
+      last [N]              Print last N logs
+      logs                  Print all the logs
+      help, --help          Print this help screen
+      version, --version    Print pillz version
+      license, --license    Print pillz license
+    """
   
 // MARK: Menu text:
   static let help = """
