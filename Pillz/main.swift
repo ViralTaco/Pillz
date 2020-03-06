@@ -14,18 +14,23 @@ enum Argument: String {
 }
 
 let view = CustomView()
-if let line = CommandLine.arguments.last?.filter({ $0.isLetter }) {
-  let arg = Argument(rawValue: line)
-  switch arg {
-  case .last:
-    view.last(5) // show the last 5
-  case .logs:
-    view.printLogs()
-  case .version:
-    view.printVersion()
-  case .help:
-    print(ViewConstants.usage)
-  default:
-    view.run()
-  }
+let args = Array(CommandLine.arguments.dropFirst())
+let arg0 = args.first ?? ""
+let argument = Argument(rawValue: arg0.filter { $0.isLetter })
+
+switch argument {
+case .last:
+  let count = Int(args[1]) ?? 5
+  if count <= 0 { fallthrough }
+  view.last(count)
+case .help:
+  print(ViewConstants.usage)
+case .logs:
+  view.printLogs()
+case .version:
+  view.printVersion()
+default:
+  view.run()
 }
+
+
