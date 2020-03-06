@@ -8,8 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		1C6CF2A823F999A0000153FA /* PillzTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CC7E59323F8883A0047B280 /* PillzTests.swift */; };
-		1C99711323F64E7700C33991 /* Rainbow in Frameworks */ = {isa = PBXBuildFile; productRef = 1C9970FC23F64E7700C33991 /* Rainbow */; settings = {ATTRIBUTES = (Required, ); }; };
-		1C9D333623F7229B00244F1A /* LineNoise in Frameworks */ = {isa = PBXBuildFile; productRef = 1C9D333523F7229B00244F1A /* LineNoise */; };
+		1C810FFB24019975002740E6 /* LineNoise in Frameworks */ = {isa = PBXBuildFile; productRef = 1C810FFA24019975002740E6 /* LineNoise */; };
+		1C810FFD24019979002740E6 /* Rainbow in Frameworks */ = {isa = PBXBuildFile; productRef = 1C810FFC24019979002740E6 /* Rainbow */; };
 		1CC7E57523F885830047B280 /* Reader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CC7E55C23F885830047B280 /* Reader.swift */; };
 		1CC7E57623F885830047B280 /* StandardInImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CC7E55D23F885830047B280 /* StandardInImplementation.swift */; };
 		1CC7E57723F885830047B280 /* Command.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CC7E55E23F885830047B280 /* Command.swift */; };
@@ -89,8 +89,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1C99711323F64E7700C33991 /* Rainbow in Frameworks */,
-				1C9D333623F7229B00244F1A /* LineNoise in Frameworks */,
+				1C810FFB24019975002740E6 /* LineNoise in Frameworks */,
+				1C810FFD24019979002740E6 /* Rainbow in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -223,13 +223,13 @@
 			buildRules = (
 			);
 			dependencies = (
-				1CC7E5A123F894370047B280 /* PBXTargetDependency */,
-				1CC7E59F23F894300047B280 /* PBXTargetDependency */,
+				1C811001240199F5002740E6 /* PBXTargetDependency */,
+				1C810FFF240199ED002740E6 /* PBXTargetDependency */,
 			);
 			name = pillz;
 			packageProductDependencies = (
-				1C9970FC23F64E7700C33991 /* Rainbow */,
-				1C9D333523F7229B00244F1A /* LineNoise */,
+				1C810FFA24019975002740E6 /* LineNoise */,
+				1C810FFC24019979002740E6 /* Rainbow */,
 			);
 			productName = pilllog;
 			productReference = 1C99711923F64E7700C33991 /* Pillz */;
@@ -342,13 +342,13 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		1CC7E59F23F894300047B280 /* PBXTargetDependency */ = {
+		1C810FFF240199ED002740E6 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			productRef = 1CC7E59E23F894300047B280 /* Rainbow */;
+			productRef = 1C810FFE240199ED002740E6 /* Rainbow */;
 		};
-		1CC7E5A123F894370047B280 /* PBXTargetDependency */ = {
+		1C811001240199F5002740E6 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			productRef = 1CC7E5A023F894370047B280 /* LineNoise */;
+			productRef = 1C811000240199F5002740E6 /* LineNoise */;
 		};
 		1CC7E5C423F8A2890047B280 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -369,14 +369,13 @@
 		1C99711723F64E7700C33991 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
 				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
 				BUNDLE_LOADER = "";
 				CLANG_USE_OPTIMIZATION_PROFILE = NO;
 				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				CREATE_INFOPLIST_SECTION_IN_BINARY = YES;
-				CURRENT_PROJECT_VERSION = 1.8.3;
+				CURRENT_PROJECT_VERSION = 1.9.0;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_ASSET_PATHS = "";
 				DEVELOPMENT_TEAM = "";
@@ -387,7 +386,7 @@
 				LLVM_LTO = YES_THIN;
 				LOCALIZED_STRING_SWIFTUI_SUPPORT = NO;
 				MACOSX_DEPLOYMENT_TARGET = 10.15;
-				MARKETING_VERSION = 1.8.3;
+				MARKETING_VERSION = 1.9.0;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = com.viraltaco.pillz;
 				PRODUCT_MODULE_NAME = "$(PRODUCT_NAME)";
@@ -405,14 +404,13 @@
 		1C99711823F64E7700C33991 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
 				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
 				BUNDLE_LOADER = "";
 				CLANG_USE_OPTIMIZATION_PROFILE = NO;
 				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				CREATE_INFOPLIST_SECTION_IN_BINARY = YES;
-				CURRENT_PROJECT_VERSION = 1.8.3;
+				CURRENT_PROJECT_VERSION = 1.9.0;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_ASSET_PATHS = "";
 				DEVELOPMENT_TEAM = "";
@@ -425,7 +423,7 @@
 				LLVM_LTO = YES_THIN;
 				LOCALIZED_STRING_SWIFTUI_SUPPORT = NO;
 				MACOSX_DEPLOYMENT_TARGET = 10.15;
-				MARKETING_VERSION = 1.8.3;
+				MARKETING_VERSION = 1.9.0;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = com.viraltaco.pillz;
 				PRODUCT_MODULE_NAME = "$(PRODUCT_NAME)";
@@ -446,7 +444,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 88L87CZSR7;
@@ -469,7 +466,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 88L87CZSR7;
@@ -526,7 +522,7 @@
 				COPY_PHASE_STRIP = NO;
 				CREATE_INFOPLIST_SECTION_IN_BINARY = YES;
 				CURRENT_PROJECT_VERSION = "$(MARKETING_VERSION)";
-				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEFINES_MODULE = YES;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
@@ -546,14 +542,15 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				GENERATE_PROFILING_CODE = YES;
+				MACH_O_TYPE = mh_execute;
 				MACOSX_DEPLOYMENT_TARGET = 10.15;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				SCAN_ALL_SOURCE_FILES_FOR_INCLUDES = YES;
 				SDKROOT = macosx;
 				STRIP_SWIFT_SYMBOLS = NO;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				VERSIONING_SYSTEM = "apple-generic";
 			};
@@ -596,7 +593,7 @@
 				COPY_PHASE_STRIP = NO;
 				CREATE_INFOPLIST_SECTION_IN_BINARY = YES;
 				CURRENT_PROJECT_VERSION = "$(MARKETING_VERSION)";
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEFINES_MODULE = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -611,10 +608,12 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACH_O_TYPE = mh_execute;
 				MACOSX_DEPLOYMENT_TARGET = 10.15;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				SCAN_ALL_SOURCE_FILES_FOR_INCLUDES = YES;
 				SDKROOT = macosx;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
@@ -664,14 +663,6 @@
 				version = 3.1.5;
 			};
 		};
-		1C9970FD23F64E7700C33991 /* XCRemoteSwiftPackageReference "Rainbow" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/onevcat/Rainbow";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 3.1.5;
-			};
-		};
 		1C9D333423F7229B00244F1A /* XCRemoteSwiftPackageReference "linenoise-swift" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/andybest/linenoise-swift.git";
@@ -683,22 +674,22 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		1C9970FC23F64E7700C33991 /* Rainbow */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 1C9970FD23F64E7700C33991 /* XCRemoteSwiftPackageReference "Rainbow" */;
-			productName = Rainbow;
-		};
-		1C9D333523F7229B00244F1A /* LineNoise */ = {
+		1C810FFA24019975002740E6 /* LineNoise */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 1C9D333423F7229B00244F1A /* XCRemoteSwiftPackageReference "linenoise-swift" */;
 			productName = LineNoise;
 		};
-		1CC7E59E23F894300047B280 /* Rainbow */ = {
+		1C810FFC24019979002740E6 /* Rainbow */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 1C9250F923EC2AE700A149F3 /* XCRemoteSwiftPackageReference "Rainbow" */;
 			productName = Rainbow;
 		};
-		1CC7E5A023F894370047B280 /* LineNoise */ = {
+		1C810FFE240199ED002740E6 /* Rainbow */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1C9250F923EC2AE700A149F3 /* XCRemoteSwiftPackageReference "Rainbow" */;
+			productName = Rainbow;
+		};
+		1C811000240199F5002740E6 /* LineNoise */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 1C9D333423F7229B00244F1A /* XCRemoteSwiftPackageReference "linenoise-swift" */;
 			productName = LineNoise;
