@@ -12,6 +12,16 @@ extension Array where Element == Drug {
   }
 }
 
+extension Array {
+  internal func at(_ index: Int) -> Element? {
+    // 0 <= index < self.count
+    guard 0..<self.count ~= index else {
+      return nil
+    }
+    return self[index]
+  }
+}
+
 extension Set {
   internal func at(_ index: Int) -> Index? {
     return self.index(self.startIndex,
