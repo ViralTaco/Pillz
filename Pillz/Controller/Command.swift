@@ -25,8 +25,7 @@ enum Command: String, CaseIterable {
   case exit = "exit"
   case quit = "quit"
   
-// MARK: public static func
-  public static func completionStrings() -> [String] {
+  public static func getCompletionStrings() -> [String] {
     var comps = ["add dose", "add drug"]
     
     for command in Self.allCases {
