@@ -130,6 +130,12 @@ class CustomView {
     if let index = ID(selection) {
       if self.current != CurrentView.drug {
         self.drug = app.drugList.at(Int(index))
+        
+        if self.drug?.doseCount == 1 {
+            app.addLog(for: self.drug, selection: 0)
+            self.drug = nil // goto guard
+        }
+        
         guard self.drug != nil else {
           drawMain()
           return
