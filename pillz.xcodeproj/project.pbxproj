@@ -59,7 +59,7 @@
 		1C99711923F64E7700C33991 /* Pillz */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Pillz; sourceTree = BUILT_PRODUCTS_DIR; };
 		1C99711A23F64F1A00C33991 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1CC7E55C23F885830047B280 /* Reader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reader.swift; sourceTree = "<group>"; };
-		1CC7E55D23F885830047B280 /* StandardInImplementation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StandardInImplementation.swift; sourceTree = "<group>"; };
+		1CC7E55D23F885830047B280 /* StandardInImplementation.swift */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 2; lastKnownFileType = sourcecode.swift; path = StandardInImplementation.swift; sourceTree = "<group>"; tabWidth = 2; };
 		1CC7E55E23F885830047B280 /* Command.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Command.swift; sourceTree = "<group>"; };
 		1CC7E55F23F885830047B280 /* Defaults.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Defaults.swift; sourceTree = "<group>"; };
 		1CC7E56023F885830047B280 /* App.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = App.swift; sourceTree = "<group>"; };
@@ -270,13 +270,12 @@
 					};
 				};
 			};
-			buildConfigurationList = 1CDC955023ABC713004B8666 /* Build configuration list for PBXProject "Pillz" */;
+			buildConfigurationList = 1CDC955023ABC713004B8666 /* Build configuration list for PBXProject "pillz" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
-				Base,
 			);
 			mainGroup = 1CDC954C23ABC713004B8666;
 			packageReferences = (
@@ -375,7 +374,7 @@
 				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				CREATE_INFOPLIST_SECTION_IN_BINARY = YES;
-				CURRENT_PROJECT_VERSION = 1.9.3;
+				CURRENT_PROJECT_VERSION = 1.10.0;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_ASSET_PATHS = "";
 				DEVELOPMENT_TEAM = "";
@@ -386,7 +385,7 @@
 				LLVM_LTO = YES_THIN;
 				LOCALIZED_STRING_SWIFTUI_SUPPORT = NO;
 				MACOSX_DEPLOYMENT_TARGET = 10.15;
-				MARKETING_VERSION = 1.9.3;
+				MARKETING_VERSION = 1.10.0;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = com.viraltaco.pillz;
 				PRODUCT_MODULE_NAME = "$(PRODUCT_NAME)";
@@ -410,7 +409,7 @@
 				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				CREATE_INFOPLIST_SECTION_IN_BINARY = YES;
-				CURRENT_PROJECT_VERSION = 1.9.3;
+				CURRENT_PROJECT_VERSION = 1.10.0;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_ASSET_PATHS = "";
 				DEVELOPMENT_TEAM = "";
@@ -423,7 +422,7 @@
 				LLVM_LTO = YES_THIN;
 				LOCALIZED_STRING_SWIFTUI_SUPPORT = NO;
 				MACOSX_DEPLOYMENT_TARGET = 10.15;
-				MARKETING_VERSION = 1.9.3;
+				MARKETING_VERSION = 1.10.0;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = com.viraltaco.pillz;
 				PRODUCT_MODULE_NAME = "$(PRODUCT_NAME)";
@@ -552,6 +551,7 @@
 				STRIP_SWIFT_SYMBOLS = NO;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Debug;
@@ -617,6 +617,7 @@
 				SDKROOT = macosx;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
@@ -643,7 +644,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		1CDC955023ABC713004B8666 /* Build configuration list for PBXProject "Pillz" */ = {
+		1CDC955023ABC713004B8666 /* Build configuration list for PBXProject "pillz" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1CDC955A23ABC713004B8666 /* Debug */,
@@ -659,16 +660,16 @@
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/onevcat/Rainbow";
 			requirement = {
-				kind = exactVersion;
-				version = 3.1.5;
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.1.5;
 			};
 		};
 		1C9D333423F7229B00244F1A /* XCRemoteSwiftPackageReference "linenoise-swift" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/andybest/linenoise-swift.git";
 			requirement = {
-				kind = exactVersion;
-				version = 0.0.3;
+				kind = upToNextMinorVersion;
+				minimumVersion = 0.0.3;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
