@@ -21,10 +21,11 @@ struct StandardInImplementation {
     }
     
     self.sin.setHintsCallback { buffer in
+      guard buffer.count > 1 else { return (nil, nil) }
       let filtered = completions.filter { $0.hasPrefix(buffer) }
       
       if let hint = filtered.first {
-        return (String(hint.dropFirst(buffer.count)), (127, 0, 127))
+        return (String(hint.dropFirst(buffer.count)), (0, 127, 127))
       } else {
         return (nil, nil)
       }
@@ -39,5 +40,5 @@ struct StandardInImplementation {
 
 struct Standard {
   public static let `in` =
-    StandardInImplementation(completions: Command.completionStrings())
+    StandardInImplementation(completions: Command.getCompletionStrings())
 }
