@@ -23,7 +23,7 @@ SCHEME='pilllog'
 # Make sure to have root
 if (( $EUID != 0 )); then 
     puts "You need root to run this script."
-    sudo "./$0"
+    sudo "$0"
     exit $?
 fi
 
@@ -35,7 +35,9 @@ if ! does_app_exist xcodebuild; then
 fi
 
 puts "Compiling..."
-if xcodebuild -workspace $WORKSPACE -scheme $SCHEME -quiet; then
+if [[ -f $PRODUCT_PATH ]]; then
+    puts "Already compiled. Skipping..."
+elif xcodebuild -workspace $WORKSPACE -scheme $SCHEME -quiet; then
     puts "Done."
 else # xcodebuild failed.
     puts "Could not compile. Try building using Xcode"
