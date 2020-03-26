@@ -78,7 +78,7 @@ class DrugList: Equatable & Codable & Writable {
     lhs.add(drugs: rhs)
   }
   
-  static subscript(_ lhs: Self, _ key: String) -> Drug? {
+  static subscript(_ lhs: DrugList, _ key: String) -> Drug? {
     return lhs.drugs.first(where: { $0.isNamed(key) })
   }
   
