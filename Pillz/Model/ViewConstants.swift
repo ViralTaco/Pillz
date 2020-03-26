@@ -80,7 +80,12 @@ struct ViewConstants {
   static let gram = "g".italic
   
 // MARK: Decoration:
-  static let line = "═".lightBlack.repeated(count: Self.columns)
+
+  static let lineInner = "═".repeated(count: Self.columns - 2)
+  static let line = "═\(Self.lineInner)═".lightBlack
+  static let lineTop = "╔\(Self.lineInner)╗".lightBlack
+  static let lineBottom = "╚\(Self.lineInner)╝".lightBlack
+  static let pipe = "║".lightBlack
   
 // MARK: Functions:
   static func banner(_ context: String = "drug") -> String {
