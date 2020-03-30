@@ -21,9 +21,10 @@ let argument = Argument(rawValue: arg0.filter { $0.isLetter })
 
 switch argument {
 case .last:
-  let count = Int(args.at(1) ?? "") ?? 5
-  if count <= 0 { fallthrough }
-  view.last(count)
+  if let count = Int(args.at(1) ?? "5") {
+    if count <= 0 { fallthrough }
+    view.last(count)
+  }
 case .help:
   print(ViewConstants.usage)
 case .logs:
