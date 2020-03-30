@@ -67,9 +67,11 @@ struct ViewConstants {
       
     """
   static let confirm = """
+    
     \("WARNING".red.bold): This action is irreversible!
     Are you sure you want to remove the last log entry?
     Type \("YES".yellow) to confirm, anything else to cancel.
+    
     """
   static let footer = "\nPress the return key to go back to the main menu."
 
