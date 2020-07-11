@@ -35,9 +35,9 @@ if ! does_app_exist xcodebuild; then
 fi
 
 puts "Compiling..."
-if [[ -f $PRODUCT_PATH ]]; then
+if [[ -f $BUILD_PATH ]]; then
     puts "Already compiled. Skipping..."
-elif xcodebuild -workspace $WORKSPACE -scheme $SCHEME -quiet; then
+elif xcodebuild -workspace $WORKSPACE -scheme $SCHEME -quiet &>/dev/null; then
     puts "Done."
 else # xcodebuild failed.
     puts "Could not compile. Try building using Xcode"
