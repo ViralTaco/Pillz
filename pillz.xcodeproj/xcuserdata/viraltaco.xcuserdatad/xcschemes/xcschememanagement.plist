@@ -4,12 +4,7 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>PillzTests.xcscheme_^#shared#^_</key>
-		<dict>
-			<key>orderHint</key>
-			<integer>1</integer>
-		</dict>
-		<key>pilllog.xcscheme_^#shared#^_</key>
+		<key>pillz.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
@@ -17,12 +12,7 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>1CC7E59023F8883A0047B280</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>1CDC955423ABC713004B8666</key>
+		<key>D8E2BAC624AE2A4E0064E8D3</key>
 		<dict>
 			<key>primary</key>
 			<true/>
