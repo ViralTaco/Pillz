@@ -22,7 +22,7 @@ class App {
   private let drugsReader: Reader<DrugList>
   private let logsReader: Reader<LogList>
   
-// MARK: initis
+// MARK: init
   init() throws {
     self.drugsReader = try Reader()
     let drugs = try? drugsReader.read()
