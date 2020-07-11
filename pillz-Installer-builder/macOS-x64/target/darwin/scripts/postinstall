@@ -1,0 +1,20 @@
+#!/bin/bash
+
+#Custermize this for your application
+APPLICATION_FILE_PATH=/pillz
+
+#Parameters
+PRODUCT_HOME=/Library/pillz/1.10.1
+
+echo "Post installation process started"
+
+#Change permissions in home directory
+echo "Change permissions in product home"
+cd ${PRODUCT_HOME}
+chmod -R 755 .
+[ -d /usr/local/bin ] || mkdir /usr/local/bin
+
+#Add application shortcut to /usr/local/bin
+rm -f /usr/local/bin/pillz
+ln -s ${PRODUCT_HOME}/${APPLICATION_FILE_PATH} /usr/local/bin/pillz
+echo "Post installation process finished"
