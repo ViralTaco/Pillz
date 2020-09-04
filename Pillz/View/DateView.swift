@@ -20,6 +20,19 @@ struct DateView: CustomStringConvertible {
     self.formatter.dateFormat = "yyyy-MM-dd HH:mm"
     return self.formatter.string(from: self.date)
   }
+  var screenDate: String {
+    self.formatter.dateFormat = "dd HH:mm"
+    return self.formatter.string(from: self.date)
+  }
+  var dayDate: String {
+    self.formatter.dateFormat = "yyyy-MM-dd"
+    return self.formatter.string(from: self.date)
+  }
+  var time: String {
+    self.formatter.dateFormat = "HH:mm"
+    return self.formatter.string(from: self.date)
+  }
+  
   var description: String { self.fullDate }
   
   init(for date: Date = Date()) {

@@ -36,6 +36,7 @@ struct StandardInImplementation {
   func read() -> String? {
     return try? self.sin.getLine(prompt: self.prompt)
   }
+  
 }
 
 struct Standard {

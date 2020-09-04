@@ -11,6 +11,7 @@ import CoreData
 
 struct LogList: Codable & Writable {
   static let defaultPath = Defaults.logsFile
+  static let defaultDailyPath = Defaults.dailyLogFile
   var list: [Log]
   
 // MARK: coding keys

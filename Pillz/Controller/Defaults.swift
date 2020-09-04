@@ -17,14 +17,29 @@ public struct Defaults {
   
   static let fileManager = FileManager.default
   static let homeDir =
-    fileManager.urls(for: .applicationSupportDirectory, in: .userDomainMask)
+    fileManager.urls(for: .applicationSupportDirectory,
+                     in: .userDomainMask)
                .first // URL to ~/ or nil
   static let appDir = folder(name: "Pillz")
-  static let logsFile = file(type: LogList.self, name: "logs")
-  static let drugsFile = file(type: DrugList.self, name: "drugs")
+  static let logsFile = file(type: LogList.self,
+                             name: "logs")
+  static let dailyLogFile = dailyFile(type: LogList.self,
+                                      name: "logs")
+  static let drugsFile = file(type: DrugList.self,
+                              name: "drugs")
   
   
 // MARK: static funcs
+  static func
+  dailyFile<T: Writable & Codable>(type: T.Type,
+                                   name: String,
+                                   date: Date = Date()) -> URL? {
+    let formatter = DateFormatter()
+    formatter.dateFormat = "yyyy-MM-dd"
+    return file(type: type, name: formatter.string(from: date))
+  }
+
+
   static func folder(path directory: URL? = homeDir,
                      name folderName: String) -> URL? {
     guard directory != nil else { return nil }
@@ -57,7 +72,8 @@ public struct Defaults {
     if !fileManager.fileExists(atPath: fileURL.path) {
       do {
         let writer = try Writer(with: type)
-        fileManager.createFile(atPath: fileURL.path, contents: writer.encoded)
+        fileManager.createFile(atPath: fileURL.path,
+                               contents: writer.encoded)
       } catch {
         return nil
       }

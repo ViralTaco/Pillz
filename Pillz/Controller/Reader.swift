@@ -13,7 +13,8 @@ enum ReaderError: Error {
   case invalidJSONDecoder
   case readError(message: String)
   
-  static func readFailure(type: String, error: String) -> Self {
+  static func readFailure(type: String,
+                          error: String) -> Self {
     .readError(message:
       "\("Error".red): Reader<\(type)>.read() failed.\n\(error)")
   }

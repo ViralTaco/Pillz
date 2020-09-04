@@ -32,6 +32,7 @@ class Writer<T: Writable & Codable> {
 // MARK: init
   init(from raw: T) throws {
     let encoder = JSONEncoder()
+    encoder.dateEncodingStrategy = .iso8601
     
     do {
       self.encoded = try encoder.encode(raw)

@@ -20,7 +20,7 @@
 import Foundation
 import Rainbow
 
-class CustomView {
+class ViewController {
   private let app: App
   private var current: CurrentView = .main
   private var drug: Drug? = nil
@@ -32,8 +32,9 @@ class CustomView {
 
 // MARK: public methods
   public func run() -> Never {
+    self.setCurrent()         // clear screen
     _ = doAction(Action.back) // show main at start
-    while let line = CustomView.prompt() {
+    while let line = ViewController.prompt() {
       if let action = try? app.command(line) {
         if doAction(action) == App.stop { break }
         save() // MARK: save
@@ -54,17 +55,6 @@ class CustomView {
     LogView.print(self.app.logs.list)
   }
   
-  public func printVersion() -> Void {
-    if let version = Bundle.main.infoDictionary?["CFBundleShortVersionString"] as? String {
-      print("pillz \(version)\n"
-          + "Copyright © 2019-\(DateView().year) Anthony Capobianco")
-    }
-  }
-  
-  public func printLicense() -> Void {
-    printVersion()
-    print(ViewConstants.license)
-  }
   
 // MARK: public static methods
   public static func confirm() -> Bool {

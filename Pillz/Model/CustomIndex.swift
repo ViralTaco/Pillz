@@ -21,21 +21,22 @@ fileprivate extension String {
       })
     } else if left == right && left != nil {
       return lhs // range from X to X is X
+    } else {
+      return lhs + "..." + rhs
     }
-    return lhs + "..." + rhs
   }
 }
 
 class CustomIndex: CustomStringConvertible {
   private static let indices = Array(("a"..."z") + ("A"..."Z") + ("0"..."9"))
-  private static let length = 61 // = Self.indices.count - 1 = 2 * 26 + 10 - 1
+  private static let uniques = 61 // = Self.indices.count - 1 = 2 * 26 + 10 - 1
   
   var id: Int
   var description: String {
     var newID = self.id
-    if newID > Self.length {
+    if newID > Self.uniques {
       var repeats = 1
-      while newID > Self.length {
+      while newID > Self.uniques {
         repeats += 1
         newID /= 2
       }

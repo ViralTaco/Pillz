@@ -45,7 +45,8 @@ enum CommandError: Error {
     return "\("Error".red): \"\(argument)\" isn't a valid command."
   }
   
-  static func invalidChain(last: Command, current: Command) -> Self {
+  static func invalidChain(last: Command,
+                           current: Command) -> Self {
     .invalidCommandChain(message(invalid: "\(last) \(current)"))
   }
   
@@ -73,7 +74,7 @@ extension App {
       if let current = Command(rawValue: String(cmd)) {
         switch current {
         case .rmlast:
-          if CustomView.confirm() { self.logs.popLast() }
+          if ViewController.confirm() { self.logs.popLast() }
           fallthrough
         case .back:
           return Action.back
